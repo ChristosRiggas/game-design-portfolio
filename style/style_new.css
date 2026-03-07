@@ -1,0 +1,296 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: azure;
+}
+
+/* Make the page container take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+}
+
+.background{
+    position: fixed;     /* sticks to the screen */
+    top: 0;
+    left: 0;
+    width: 100vw;        /* full width of viewport */
+    height: 100vh;       /* full height of viewport */
+    object-fit: cover;   /* prevents stretching */
+
+    z-index: -1;         /* sends it behind everything */
+}
+
+/* Header layout */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: #000000d1;
+    /* color: #fff; */
+
+    position: fixed;     /* sticks it to the viewport */
+    top: 0;              /* top of the screen */
+    left: 0;             /* left edge */
+    width: 100%;         /* span full width */
+    z-index: 1000;       /* make sure it’s above other content */
+}
+
+.page-container {
+    /* max-width: 1200px; */
+    margin: auto;
+    padding-top: 60px;
+    background-color: #533cff00;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    flex: 1;
+    padding: 0% 0px;
+}   
+
+.subhead {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.subcontent {
+    padding: 40px;
+    background-color: #000000d1;
+    border: 2px solid #9c44b3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Name */
+.logo {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    padding: 5px 0px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+.nav a:hover {
+    color:  #9c44b3;
+}
+
+/* dropdown container */
+.dropdown {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: rgb(0, 0, 0);
+    border: 2px solid #9c44b3;
+
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* dropdown items */
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover{
+    background: #9c44b3;
+    color: #fff;
+}
+
+/* show menu when hovering anywhere on dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slideshow styles */
+.slideshow {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .slideshow:hover .slides {
+    animation-play-state: paused;
+} */
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 24s infinite;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    max-width: 400px;
+}
+
+@keyframes slide {
+
+0%,20% { transform: translateX(0); }
+
+25%,45% { transform: translateX(-100%); }
+
+50%,70% { transform: translateX(-200%); }
+
+75%,95% { transform: translateX(-300%); }
+
+100% { transform: translateX(0); }
+
+}
+
+/* Project-specific styles */
+/* 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 900px) {
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+} */
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .slide-text{
+    left:20px;
+    right:20px;
+    bottom:20px;
+    max-width:100%;
+    }
+
+    .slideshow{
+        height:300px;
+    }
+
+    .slide img{
+        height:300px;
+    }
+
+    /* footer and bottom section */
+    .footer, .down-page {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #anchor {
+        bottom: 3vh;
+        right: 3vw;
+    }
+
+}
+
+/* Footer styling */
+.footer {
+    background-color: #000000d1;
+    color: #fff;
+}
+
+.down-page {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Anchor / Back to top button */
+#anchor {
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+    z-index: 5000;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#anchor:hover {
+    opacity: 1;
+}
+
+#anchor_img {
+    max-width: 50px; /* adjust size */
+    height: auto;
+}

@@ -23,7 +23,7 @@ body{
  
 .container{
 	width: 100%;
-	padding: 0px 15px;
+	padding: 0px 0px;
 	float: left;
 	right: 0;
  }
@@ -38,13 +38,13 @@ body{
 
 #head{
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 150px;
+	margin-bottom: 0px;
 	font-size: 28px;
 	color: white;
     padding: 15px 0px 5px 0px;
 }
 
-			@media (max-width: 505px){
+			@media (max-width: 200px){
 			#head{padding: 0;}
 			}
  
@@ -232,12 +232,12 @@ table{
 	display: none;
 }
 
-  /*--------------- Slide Show ----------------------------------------------------------*/
+  /* --------------- Slide Show ----------------------------------------------------------
 
 			/*Το template το βρήκα σε ένα βιντεάκι στο youtube. Άλλαξα διαστάσεις για να το προσαρμόσω στο site μου και να το κάνω ανταποκρίσιμο*/
 			/*Άλλαξα στιλιστικά στοιχεία όπώς σκιές διαφάνεια στο κείμενο καθώς και χρόνους εναλαγής στο animation https://www.youtube.com/watch?v=2XjTnfRsNGs&t=503s*/
 			/*Επίσης έβαλα ως συμπλήρωμα το φόντο του slider το "slide-back" */
-			
+ /*			
 			.slide{												
 			overflow: hidden;
 			height: 80%;
@@ -385,7 +385,7 @@ table{
 			100%{
 				visibility: visible;
 			}
-		}
+		} */
 
 .subhead h2{
 	font-size: 26px;
@@ -490,12 +490,10 @@ em{ margin-top: 10px;}
 
 
   /*----------------    > 1200px    -----------------------------------------*/
-									@media (min-width: 1200px){
-										#menu-icon{display:none;}
-										.menu{display:block;}
-										
-										
-										
+@media (min-width: 1200px){
+#menu-icon{display:none;}
+.menu{display:block;}
+																			
 *{
 	margin: 0;
 	padding: 0;}
@@ -524,9 +522,9 @@ body{
 }
 
 #head{
-	margin: 40px 0px;
-	margin-top: 60px;
-	margin-bottom: 150px;
+	margin: 0px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #header{
