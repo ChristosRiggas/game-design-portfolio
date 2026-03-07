@@ -1,0 +1,764 @@
+
+ .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left: 0; padding-right: 0;}										
+	
+html{
+	margin:0;
+	padding:0;
+	overflow-y:scroll;
+}
+
+body{
+	font-size: 17px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #3b3b3b;
+	background: #c9f6ff;
+}
+ 
+ a:hover,  a:focus{
+	text-decoration: none !important;
+}
+
+ 
+.container{
+	width: 100%;
+	padding: 0px 15px;
+	float: left;
+	right: 0;
+ }
+ 
+.hed{
+	background: #9ee6e2;
+	background:url("../images/header background v5.png") no-repeat top right #2b346b;
+	box-shadow: 0px 0px 15px;
+	padding-top: 10px;
+	
+}
+
+#head{
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 150px;
+	font-size: 28px;
+	color: white;
+    padding: 15px 0px 5px 0px;
+}
+
+			@media (max-width: 505px){
+			#head{padding: 0;}
+			}
+ 
+#header .logo {
+	margin-left: 20px;
+}
+ 
+#main{
+	margin: 0px auto;
+}
+ 
+table{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+			
+
+#header .logo{
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 5%;
+	margin-top: 9px;
+}
+
+.hh{
+	margin-bottom: 20px;
+}
+
+
+			    @media (max-width: 1199px){
+				#menu-icon{
+					margin-top: 45px;
+					display: block;
+					text-align: center;
+					border-bottom: 4px solid #d7d9de;
+					border-top: 4px solid #d7d9de;
+					border-radius:20px;
+				}
+/* 
+				#menu-icon:hover{
+					border-bottom: 8px solid #aaa;
+					border-top: 8px solid #aaa;
+					border-bottom: 0px;
+				} */
+
+				#menu-icon-box span{
+					display: block;
+					width: 100%;
+					height: 6px;
+					margin-top: 6px;
+					background: #d7d9de;
+				}
+
+				#menu-icon-box:hover span{
+					background: #aaa;
+				}
+
+				.menu{
+					display:none;
+					text-align: center;
+					width: 100%;
+					border-bottom: 4px solid #d7d9de;
+					border-radius: 20px;
+				}
+
+				#menu-icon-box{
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					cursor: pointer;
+					margin-top: 2px;
+				}
+
+				#table-menu, td, tbody, tr{
+					display: block;
+					text-align: center;
+					width: 100%;
+					background: none;
+				}
+
+				td,tr{
+					padding: 5px 0px;
+				}
+
+				.menu-item .submenu{
+					display: none;
+				}
+
+				.menu-item{
+					background: #0000003e;
+					color: white;
+					border-radius:20px;
+/* 					padding: 15px 30px; */
+				}
+
+				.menu-item:hover{
+					text-decoration: none;
+					background: #007e94;
+				}
+
+				.menu-item a:hover{
+					color: black;
+					text-decoration: none;
+				}
+
+				.categories, .selected{
+					display: block;
+					text-align: center;
+					color: white;
+					font-size: 20px;
+					border-radius: 20px;
+					padding: 35px 0px;
+					min-width: 100px;
+					opacity: 0.85;
+				}
+				
+				.hed .selected{
+					color: #8f8f8f;
+					font-size: 20px;
+					font-weight: normal;					
+				}
+
+				
+				
+				}
+
+.selected a{
+	border-radius: 20px;
+}
+
+.subhead{
+	margin: 50px 0px;
+}
+
+.subhead .selected{
+	width: 80%;
+	text-shadow: 0 3px 2px #87bcc7;
+    font-weight: bold;
+	background: white;
+	color: black;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 20px 10%;
+	margin-top: 100px;
+}
+
+#m{
+	background: #9ee6e2;
+	background:url("../images/background_v1.png") fixed;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 0px;
+	box-shadow: 0px 0px 15px
+}
+
+.count{
+   padding: 10px;
+   padding: 10px;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+}
+
+.content-image{
+	width: 100%;
+	margin-top: 0;
+	border: 0px solid red;
+	border-radius: 20px;
+	margin-bottom: 10%;
+	height: 40vw;
+}
+
+.content{
+	width: 80%;
+	margin-bottom: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.subhead hr{
+	display: none;
+}
+
+  /*--------------- Slide Show ----------------------------------------------------------*/
+
+			/*Το template το βρήκα σε ένα βιντεάκι στο youtube. Άλλαξα διαστάσεις για να το προσαρμόσω στο site μου και να το κάνω ανταποκρίσιμο*/
+			/*Άλλαξα στιλιστικά στοιχεία όπώς σκιές διαφάνεια στο κείμενο καθώς και χρόνους εναλαγής στο animation https://www.youtube.com/watch?v=2XjTnfRsNGs&t=503s*/
+			/*Επίσης έβαλα ως συμπλήρωμα το φόντο του slider το "slide-back" */
+			
+			.slide{												
+			overflow: hidden;
+			height: 80%;
+			width: 80%;
+			border: 2px solid black; 
+			background: #c0ebeb;
+			position: absolute;
+			box-shadow: 10px 15px 20px 0 rgba(0, 0, 0, 0.2), 10px 10px 20px 10px rgba(10, 0, 0, 0.19);
+			z-index: 12;
+			margin-left: 5%;
+			top: 10%;
+
+		}
+
+		.slide .banner1,.banner2,.banner3,.banner4{
+			width: 120%;
+			height: 100%;
+			position: absolute;
+
+		}
+
+		.slide img{
+			width: 100%;
+			position: absolute;
+			animation: zoom-out 7.5s linear infinite;
+		}
+		@keyframes zoom-out{
+			100%{
+				width:90%
+			}
+		}
+
+		.slide .text-box{
+			width: 100%;
+			position: absolute;
+			color: #000;
+			left: 10px;
+		}
+
+		.slide .text-box h1{
+			font-size: 20px;
+		}
+		
+		.slide .text-box p{
+			margin-top: 5vw;
+			width: 70vw;
+			line-height: 23px;
+			background: rgba(255,255,255,0.7);
+			color: black;
+			padding: 7px 10px;
+			text-align: justify;
+		}		
+					
+		.slide .text-box span{
+			background: red;
+			height: 2px;
+			width: 100px;
+			left: 0;
+			position: absolute;
+		}
+
+		.banner1{
+			animation: slide1 30s linear infinite;
+		}
+
+		.banner2{
+			animation: slide2 30s linear infinite;
+		}
+
+		.banner3{
+			animation: slide3 30s linear infinite;
+		}
+
+		.banner4{
+			animation: slide4 30s linear infinite;
+		}
+
+		@keyframes slide1{
+			0%{
+				visibility: visible;
+			}
+			25%{
+				visibility: hidden;
+			}
+			50%{
+				visibility: hidden;
+			}
+			75%{
+				visibility: hidden;
+			}
+			100%{
+				visibility: visible;
+			}
+		}
+
+		@keyframes slide2{
+			0%{
+				visibility: hidden;
+			}
+			25%{
+				visibility: hidden;
+			}
+			50%{
+				visibility: visible;
+			}
+			75%{
+				visibility: hidden;
+			}
+			100%{
+				visibility: hidden;
+			}
+		}
+
+		@keyframes slide3{
+			0%{
+				visibility: hidden;
+			}
+			25%{
+				visibility: hidden;
+			}
+			50%{
+				visibility: hidden;
+			}
+			75%{
+				visibility: visible;
+			}
+			100%{
+				visibility: hidden;
+			}
+		}
+
+		@keyframes slide4{
+			0%{
+				visibility: hidden;
+			}
+			25%{
+				visibility: hidden;
+			}
+			50%{
+				visibility: hidden;
+			}
+			75%{
+				visibility: hidden;
+			}
+			100%{
+				visibility: visible;
+			}
+		}
+
+.subhead h2{
+	font-size: 26px;
+	padding: 10px;
+}
+
+.slide-back{
+	height:	 50vw;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 50px;
+	display: block;
+}
+
+.slide-back .a10{
+	height:	 50vw;
+	width: 100%; 
+	filter: blur(8px) brightness(40%);
+	position: absolute;
+	transform: scale(1.1);
+	z-index: 9;
+}
+
+#hu{
+	background: black;
+	border-radius:20px;
+	margin-bottom: 20px;
+}
+
+.content{
+	background: #c4e6ff;
+	box-shadow: 5px 10px 8px #0e5a8f;
+	border: 1px solid;
+	text-align: justify;
+	position: relative;
+	padding: 0px 40px;
+}
+
+hr{
+	margin: 10px 0px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #7dbbc7;
+	text-align: center;
+	padding-bottom: 15px;
+	border-top: 0px solid red;
+}
+
+.creator{
+	margin: 5px 0px;
+}
+
+em{ margin-top: 10px;}
+
+.logo2{
+	bottom: 20px 0px;
+}
+
+#anchor{
+	max-width: 60px;
+	position: fixed;
+	z-index: 5000;
+	bottom: 0;
+	right: 0;
+	margin: 0px 3.2vw 5vw 0px;
+	opacity: 0.4;
+}
+
+#anchor:hover{
+	opacity: 1;
+}
+
+#anchor_img{
+	max-width: 3vw;
+}
+
+.anchor-head{
+	color: black;
+	margin-top: 0;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.logo2{
+	width: 330px;
+	height: 65px;
+	margin-bottom: 10px;
+}
+
+.footer .logo{
+	margin: 5px;
+}
+
+
+	@media (max-width: 1200px){ /*λογότυπο Ionian Univercity*/
+	#iu{
+	width: 30%; height: 30%; margin: 0 35%; margin-bottom: 5%;}
+	}
+
+
+
+  /*----------------    > 1200px    -----------------------------------------*/
+									@media (min-width: 1200px){
+										#menu-icon{display:none;}
+										.menu{display:block;}
+										
+										
+										
+*{
+	margin: 0;
+	padding: 0;}
+
+html{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}	
+																	
+body{
+	font-family: Verdana;
+	width: 100%;
+}
+
+.container{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding: 0px 15px;
+	margin: 0px;
+}
+
+#header .logo{
+	margin-left: 0;
+}
+
+#head{
+	margin: 40px 0px;
+	margin-top: 60px;
+	margin-bottom: 150px;
+}
+
+#header{
+	margin-top: 50px;
+	margin-left: 5.2%;
+}
+
+		.slide .text-box{
+			margin-top: 5vw;
+			margin-left: 3vw;
+			width: 100%;
+			position: absolute;
+		}
+
+		.slide .text-box h1{
+			font-size: 20px;
+			margin-bottom: 3.5vw;
+		}
+		
+		.slide .text-box p{
+			margin-top: 8vw;
+			width: 40vw;
+			line-height: 23px;
+			background: rgba(255,255,255,0.7);
+			color: rgba(0, 0, 0, 0.294);
+			padding: 7px 10px;
+			text-align: justify;
+		}		
+					
+		.slide .text-box span{
+			background: red;
+			height: 2px;
+			width: 100px;
+			left: 0;
+			position: absolute;
+		}
+		
+	
+					#hu{
+						height: 40px;
+						background: none;
+						margin: 0;
+						position: fixed;
+						top: 0;
+						z-index: 200;
+						opacity: 0.95;
+					}
+					
+					#hu:hover{
+						opacity: 1;
+					}
+						
+					
+				    table{
+						margin: 0;
+						padding: 0;
+						background-color: rgba(0, 0, 0, 0.439);
+					}
+					
+					.menu{
+						height: 40px;
+						padding-left: 10%;
+					}
+					
+
+					.menu-item{
+						float: left;
+						width: 180px;
+						height: 40px;
+						background-color: #00000013;
+						line-height: 40px;
+						text-align: center;
+					}
+
+					.menu-item .categories{
+						font-weight: bold;
+						font-size: 15px;
+					}
+
+					.menu-item a{
+						text-decoration: none;
+						color: white;
+						display: block;
+						cursor: pointer;
+					  }					 
+					
+					.menu-item a:hover{
+						background-color: #007e94;
+						color: black;
+					}
+
+					.menu-item div.submenu{
+						display: none;
+					}
+
+					.menu-item:hover div.submenu {
+						display: block;
+					}
+
+					#table-menu{
+						text-align: center;
+					} 
+
+					.menu{
+						background-color: #003b45;
+						width: 100%;
+						position: fixed;
+						z-index: 2000;
+						top: 0;
+					}
+					
+					.hed .selected{
+						border-radius: 0;
+						font-weight: bold;
+						color: #8f8f8f;
+						font-size: 15px;
+					}
+					
+									
+							#submenu-1,#submenu-2,#submenu-3,#submenu-4{
+								position: absolute;
+								margin-left: 180px;
+								display: none;
+							}
+							
+
+							#count_1:hover div#submenu-1{
+								display: block;
+							}
+							#count_2:hover div#submenu-2{
+								display: block;
+							}	
+							#count_3:hover div#submenu-3{
+								display: block;
+							}	
+							#count_4:hover div#submenu-4{
+								display: block;
+							}	
+							
+							
+							.hov:hover .menu-item a{
+								background-color: #007e94;
+								color: none;
+							}
+							
+
+
+.content{
+	padding: 0;
+	margin-bottom: 100px;
+	margin-right: 10%;   
+	margin-left: 10%;
+	width: 80%;
+	padding: 2%;
+}
+
+.ins{
+	width: 100%;
+}
+
+.content-image{
+	float: right;
+    height: 20vw;
+	width: 47%;
+	border: 0px solid red;
+	margin: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	border-radius: 20px;	
+}
+
+.count{
+	padding: 10px;
+	background: #c9f6ff;
+	border-radius: 20px;
+	margin-bottom: 0;
+}
+
+.count h4{
+	margin-top: 10px;
+}
+
+.down-page{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.subhead p{
+	font-weight: normal;
+    font-size: 17px;
+}
+
+.subhead .selected{
+	color: black;
+	background: white;
+	border: 0px solid red;
+    padding: 10px;
+	opacity: 0.85;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+.count h3{
+	color: black;
+}
+
+#m{
+	background-color: #9ee6e2;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 0px;
+}
+
+.subhead hr{
+	display: block;
+	border: 1px solid #0e5a8f;
+	margin-bottom: 0;
+}
+	
+.main .logo{
+	margin: 50px;
+}
+
+/*λογότυπο Ionian Univercity*/
+#iu{width: 20%; margin-right: 15.5%; height: 20%}
+ 							
+																			
+										
+										
+}   /*----------- Τέλος > 1200px ----------------------------------------*/
+																		    
