@@ -78,7 +78,7 @@ window.onload = function(){
     }
 
     function startSlideshow(){
-        slideshowInterval = setInterval(()=> changeSlide(1),5000);
+        slideshowInterval = setInterval(()=> changeSlide(1),6000);
     }
 
     function stopSlideshow(){
