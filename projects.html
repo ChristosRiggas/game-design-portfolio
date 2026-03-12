@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<!-- <link type="text/css" rel="stylesheet" href="style/bootstrap.grid.css" />     -->
+	<link type="text/css" href="style/style_new.css" rel="stylesheet" />  
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  <!-- This is an add -->
+	<script src="js/slideshow.js"></script>
+	<script src="js/trigger_on_scroll.js"></script> 
+</head>
+
+<body>
+	<div class="page-container">
+
+		<img class="background" src="images/photo-1690321607729-bce901c77324.png" alt="Background Image">
+
+		<header class="header">
+			<a href="index.html"><h1 class="logo">Christos Ringas</h1> </a>
+
+			<!-- hamburger button for mobile -->
+			<button class="hamburger" id="hamburger-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<nav class="nav" id="nav-menu">
+
+				<a href="index.html">About</a>
+
+				<div class="dropdown">
+					<a class="selected" href="projects.html">Game Projects</a>
+					<div class="dropdown-menu">
+						<a href="projects.html">Project 1</a>
+						<a href="projects.html">Project 2</a>
+						<a href="projects.html">Project 3</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<a href="more-projects.html">Other Projects</a>
+					<div class="dropdown-menu">
+						<a href="more-projects.html">3D Art</a>
+						<a href="more-projects.html">2D Art</a>
+						<a href="more-projects.html">Animation</a>
+					</div>
+				</div>
+
+				<a href="resume/Christos Ringas CV - Developer 2025.pdf" download>Resume</a>
+
+				<a href="contact.html">Contact</a>
+
+			</nav>
+		</header>
+
+	</div>
+
+	<section class="projects-hero">
+		<div class="subhead highlighted-projects-head reveal-up" id="hp"> <h2 class="selected"> Game Projects </h2>	</div>	
+
+			<!-- Project 1 -->
+			<div class="project-row reveal-up" role="button" tabindex="0">
+
+				<div class="project-main">
+					<div class="project-image reveal-left">
+						<img src="images/slide_show/image_3.png">
+					</div>
+
+					<div class="project-info reveal-right">
+						<h2>Project One</h2>
+						<p>Short description of the project.</p>
+					</div>
+				</div>
+
+				<div class="project-details reveal-up">
+					<h3>Dev Process</h3>
+					<p>How you built it...</p>
+
+					<h3>Technologies</h3>
+					<p>HTML, CSS, JS...</p>
+				</div>
+			</div>
+
+			<!-- Project 2 -->
+			<div class="project-row reverse reveal-up" role="button" tabindex="0">
+
+				<div class="project-main">
+					<div class="project-image reveal-right">
+						<img src="images/slide_show/image_2.png">
+					</div>
+
+					<div class="project-info reveal-left">
+						<h2>Project Two</h2>
+						<p>Short description of the project.</p>
+					</div>
+				</div>
+
+				<div class="project-details reveal-up">
+					<p>Details...</p>
+				</div>
+			</div>
+
+	</section>
+	
+	<footer class="footer">  
+		<div class="down-page">
+			<h5 class="creator">Created by</h5>
+			<h3>Christos Ringas</h3>
+			<em>© 2026</em> 		
+		</div> 
+	</footer>
+
+	</div>	
+
+	<div id="anchor">
+		<a href="#top"><img id="anchor_img" src="images/arrow.png" alt="Back to top"/></a>
+	</div>
+
+</body>
+</html>

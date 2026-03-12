@@ -1,16 +1,22 @@
 let slideIndex = 1;
 let slideshowInterval;
 let isAnimating = false;
+let isDragging = false;
+
+let startX = 0;
+let endX = 0;
 
 window.onload = function(){
 
     const slides = document.querySelector(".slides");
+    const slideshow = document.getElementById("slideshow");
 
     const firstClone = slides.children[0].cloneNode(true);
     const lastClone = slides.children[slides.children.length-1].cloneNode(true);
 
     slides.appendChild(firstClone);
     slides.insertBefore(lastClone, slides.firstChild);
+
     slides.style.transition = "none";
     slides.style.transform = "translateX(-100%)";
 
@@ -21,10 +27,10 @@ window.onload = function(){
     document.querySelector(".next").onclick = () => changeSlide(1);
     document.querySelector(".prev").onclick = () => changeSlide(-1);
 
-    const slideshow = document.getElementById("slideshow");
-
     slideshow.addEventListener("mouseenter", stopSlideshow);
     slideshow.addEventListener("mouseleave", startSlideshow);
+
+    /* SLIDE LOOP FIX */
 
     slides.addEventListener("transitionend", function(){
 
@@ -34,9 +40,9 @@ window.onload = function(){
 
             slides.style.transition = "none";
             slideIndex = 1;
-            slides.style.transform = "translateX(" + (-slideIndex * 100) + "%)";
+            slides.style.transform = `translateX(-100%)`;
 
-            slides.offsetHeight; // force reflow
+            slides.offsetHeight;
 
             slides.style.transition = "transform 0.8s ease";
         }
@@ -45,9 +51,9 @@ window.onload = function(){
 
             slides.style.transition = "none";
             slideIndex = totalSlides - 2;
-            slides.style.transform = "translateX(" + (-slideIndex * 100) + "%)";
+            slides.style.transform = `translateX(${-slideIndex*100}%)`;
 
-            slides.offsetHeight; // force reflow
+            slides.offsetHeight;
 
             slides.style.transition = "transform 0.8s ease";
         }
@@ -57,8 +63,8 @@ window.onload = function(){
     function changeSlide(n){
 
         if(isAnimating) return;
-        isAnimating = true;
 
+        isAnimating = true;
         slideIndex += n;
 
         showSlides();
@@ -67,14 +73,13 @@ window.onload = function(){
     function showSlides(){
 
         slides.style.transition = "transform 0.8s ease";
-        slides.style.transform = "translateX(" + (-slideIndex*100) + "%)";
+        slides.style.transform = `translateX(${-slideIndex*100}%)`;
 
         document.querySelectorAll(".slide").forEach(slide=>{
             slide.classList.remove("active");
         });
 
         document.querySelectorAll(".slide")[slideIndex].classList.add("active");
-
     }
 
     function startSlideshow(){
@@ -85,15 +90,40 @@ window.onload = function(){
         clearInterval(slideshowInterval);
     }
 
+    /* SWIPE SUPPORT */
+
+    slideshow.addEventListener("touchstart", e=>{
+        startX = e.touches[0].clientX;
+    });
+
+    slideshow.addEventListener("touchend", e=>{
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe(){
+
+        const diff = startX - endX;
+
+        if(Math.abs(diff) < 50) return;
+
+        if(diff > 0){
+            changeSlide(1);
+        }else{
+            changeSlide(-1);
+        }
+
+    }
+
     requestAnimationFrame(()=>{
         slides.style.transition = "transform 0.8s ease";
-    }); 
+    });
 
 };
 
-setTimeout(() => {
+setTimeout(()=>{
     document.querySelector(".slideshow-container").classList.add("loaded");
-}, 100);
+},100);
 
 
 // solution with no black flash but jump 

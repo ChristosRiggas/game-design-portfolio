@@ -17,11 +17,18 @@
 		<img class="background" src="images/photo-1690321607729-bce901c77324.png" alt="Background Image">
 
 		<header class="header">
-			<h1 class="logo">Christos Ringas</h1>
+			<a href="index.html"><h1 class="logo">Christos Ringas</h1> </a>
 
-			<nav class="nav">
+			<!-- hamburger button for mobile -->
+			<button class="hamburger" id="hamburger-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 
-				<a href="index.html">About</a>
+			<nav class="nav" id="nav-menu">
+
+				<a class="selected" href="index.html">About</a>
 
 				<div class="dropdown">
 					<a href="projects.html">Game Projects</a>
@@ -41,7 +48,7 @@
 					</div>
 				</div>
 
-				<a href="resume.html">Resume</a>
+				<a href="resume/Christos Ringas CV - Developer 2025.pdf" download>Resume</a>
 				<a href="contact.html">Contact</a>
 
 			</nav>
@@ -54,7 +61,7 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_1.png"></a>
 						<div class="slide-text">
-							<h2>Louvre</h2>
+							<h3>Louvre</h3>
 							<p>The world's largest art museum in Paris.</p>
 						</div>
 					</div>	
@@ -64,7 +71,7 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_2.png"></a>
 						<div class="slide-text">
-							<h2>Buckingham Palace</h2>
+							<h3>Buckingham Palace</h3>
 							<p>London residence of the British monarchy.</p>
 						</div>
 					</div>
@@ -74,7 +81,7 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_3.png"></a>
 						<div class="slide-text">
-							<h2>Bauhaus Archive</h2>
+							<h3>Bauhaus Archive</h3>
 							<p>Historic German art school from 1919.</p>
 						</div>
 					</div>
@@ -84,7 +91,7 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_4.png"></a>
 						<div class="slide-text">
-							<h2>Epidaurus</h2>
+							<h3>Epidaurus</h3>
 							<p>Ancient Greek theatre famous for acoustics.</p>
 						</div>
 					</div>
@@ -94,15 +101,17 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_4.png"></a>
 						<div class="slide-text">
-							<h2>Epidaurus</h2>
+							<h3>Epidaurus</h3>
 							<p>Ancient Greek theatre famous for acoustics.</p>
 						</div>
 					</div>
 				</div>
 			</div>	
 
-			<a class="prev">❮</a>
-			<a class="next">❯</a>
+			<div class="arrows-container">
+				<a class="arrows prev">❮</a>
+				<a class="arrows next">❯</a>
+			</div>
 
 		</div>
 
@@ -116,12 +125,61 @@
 					Ancient Greece was followed by the Roman Empire, one of the greatest civilisations in the world that took hold of large swathes of Europe, North Africa and the Middle East. Visiting Roman ruins in Rome is a no-brainer, with the magnificent Colosseum, Pantheon and the Roman Forum. Many Roman ruins can also be found in Spain, such as the remains at Merida, Italica, Segovia, Toledo and Terragona. With 47 sites, Italy has the most UNESCO World Heritage Sites of any country in the world, directly followed by Spain with 43.
 				</p>
 				<div>  
-					<!-- <h4> See also <a href="top_landmarks/top_landmarks.html"> Top Landmarks </a> </h4> -->
 					<br><br> <a href="projects.html" > Game Projects </a>
 				</div> 	
 			</div>
 		</div>	
 	</main>
+
+
+	<section class="projects-hero">
+		<div class="subhead highlighted-projects-head reveal-up" id="hp"> <h2 class="selected"> Highlighted Projects </h2>	</div>	
+
+			<!-- Project 1 -->
+			<div class="project-row reveal-up" role="button" tabindex="0">
+
+				<div class="project-main">
+					<div class="project-image reveal-left">
+						<img src="images/slide_show/image_3.png">
+					</div>
+
+					<div class="project-info reveal-right">
+						<h2>Project One</h2>
+						<p>Short description of the project.</p>
+					</div>
+				</div>
+
+				<!-- clicking the row toggles details -->
+				<div class="project-details reveal-up">
+					<h3>Dev Process</h3>
+					<p>How you built it...</p>
+
+					<h3>Technologies</h3>
+					<p>HTML, CSS, JS...</p>
+				</div>
+			</div>
+
+			<!-- Project 2 -->
+			<div class="project-row reverse reveal-up" role="button" tabindex="0">
+
+				<div class="project-main">
+					<div class="project-image reveal-right">
+						<img src="images/slide_show/image_2.png">
+					</div>
+
+					<div class="project-info reveal-left">
+						<h2>Project Two</h2>
+						<p>Short description of the project.</p>
+					</div>
+				</div>
+
+				<!-- clicking the row toggles details -->
+				<div class="project-details reveal-up">
+					<p>Details...</p>
+				</div>
+			</div>
+
+	</section>
 	
 	<footer class="footer">  
 		<div class="down-page">
