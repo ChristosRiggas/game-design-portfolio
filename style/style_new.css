@@ -225,7 +225,7 @@ body, html {
     overflow: hidden; /* prevents horizontal scrollbar */
     position: relative;
     background-color: #000000d1;
-    margin: 3px 0;
+    margin: 10px 0;
 
     transform: scale(1.02);
     transition: opacity 1s ease, transform 1s ease;
@@ -239,6 +239,11 @@ body, html {
 .slideshow-container.loaded .slide-text {
     transform: scale(1);
     opacity: 1;
+}
+
+.slide-inner {
+    position: relative;       
+    display: inline-block;    
 }
 
 .slides {
@@ -297,15 +302,15 @@ body, html {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 16px;
+    padding: 20px;
     color: white;
     font-size: 30px;
     background: rgba(56,66,67,0.4);
     border-radius: 50%;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 30px; }
+.next { right: 30px; }
 
 
 
@@ -367,7 +372,9 @@ body, html {
 
     .dropdown:hover .dropdown-menu { display: none; }
 
-    .slideshow-container { margin-top: 0px; }
+    .slideshow-container {  
+        margin: 3px 0;
+    }
 
     .slide-text {
         left: 20px;
