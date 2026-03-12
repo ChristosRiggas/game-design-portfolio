@@ -7,9 +7,10 @@
 }
 
 /* Make the page container take full height */
-html, body {
-    height: 100%;
+body, html {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* hide horizontal scrollbar */
 }
 
 .body {
@@ -136,17 +137,25 @@ html, body {
 
 /* slides style */
 
-.slideshow-container {
+/* .slideshow-container{
     width: 100%;
     overflow: hidden;
     position: relative;
     background-color: #000000d1;
     margin-top: 3px;
+
+    transform: scale(1.02);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
-.slides {
-    display: flex;
+.slideshow-container.loaded{
+    transform: scale(1);
+}
+
+.slides{
+    display:flex;
     transition: transform 0.8s ease;
+    will-change: transform;
     width: 100%;
 }
 
@@ -157,24 +166,37 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    max-height: 80vh;
+    display: block;
+
+    transform: scale(1.1);
+    transition: transform 6s ease;
+}
+
+.slide.active img{
+    transform: scale(1);
+}
+
+.slideshow-container.loaded .slide img{
+    transform: scale(1);
 }
 
 .slide-inner {
-    position: relative;       /* so text is relative to this inner wrapper */
-    display: inline-block;    /* shrink-wraps image width */
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;        /* max width */
-    display: block;
+    position: relative;       
+    display: inline-block;    
 }
 
 .slide-text {
     position: absolute;
     bottom: 40px;
-    left: 40px;               /* now relative to image, not container */
+    left: 40px;              
     color: white;
     background: rgba(0,0,0,0.5);
     padding: 20px;
@@ -195,12 +217,106 @@ html, body {
 }
 
 .prev { left: 10px; }
+.next { right: 10px; } */
+
+
+.slideshow-container {
+    width: 100%;
+    overflow: hidden; /* prevents horizontal scrollbar */
+    position: relative;
+    background-color: #000000d1;
+    margin: 3px 0;
+
+    transform: scale(1.02);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* When page loads, zoom image and text to normal */
+.slideshow-container.loaded .slide img {
+    transform: scale(1);
+}
+
+.slideshow-container.loaded .slide-text {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    will-change: transform;
+    transition: transform 0.8s ease;
+    box-sizing: border-box;
+}
+
+.slide {
+    flex: 0 0 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    max-height: 80vh;
+    display: block;
+
+    transform: scale(1.05); /* slightly smaller zoom for smoother effect */
+    transition: transform 1.5s ease-in-out, opacity 0.5s ease; /* smoother transition */
+    opacity: 1;
+}
+
+.slide.active img {
+    transform: scale(1);
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    backdrop-filter: blur(4px);
+    max-width: 70%;
+
+    transform: scale(0.95);
+    transition: transform 1.5s ease-in-out, opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Arrow buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+    background: rgba(56,66,67,0.4);
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
 .next { right: 10px; }
+
+
+
+
+
 
 /* Footer styling */
 .footer {
     background-color: #000000d1;
     color: #fff;
+    bottom: 0cap;
 }
 
 .down-page {
