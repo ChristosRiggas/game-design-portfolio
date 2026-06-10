@@ -19,9 +19,13 @@ body, html {
     min-height: 100vh;
 }
 
-p {
+p{
     line-height: 1.6;
     color: azure;
+}
+
+li, span {
+    color: rgb(178, 164, 190);
 }
 
 h2 {
@@ -44,6 +48,10 @@ a {
     color: #ea94ff;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: #9c44b3;
+}
 
 
 
@@ -367,7 +375,7 @@ a {
 .project-main {
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:0px;
     width:100%;
 }
 
@@ -383,26 +391,28 @@ a {
 /* image */
 
 .project-image{
-    flex:1;
+    flex: .8 1.2 0%;
     z-index: 1;
 }
 
 .project-image img {
     width: 100%;
+    max-width: 700px;
     display: block;
     border-radius: 10px;
-    transform: scale(1);
+    transform: scale(1.02);
     transition: transform .6s ease;
 }
 
 /* scale image when the whole project-row is hovered */
 .project-row:hover .project-image img{
-    transform:scale(1.03);
+    transform:scale(1.05);
 }
 
 /* info */
 
 .project-info{
+    padding: 30px;
     flex:1;
 }
 
@@ -424,7 +434,7 @@ a {
 /* hidden details */
 
 .project-details {
-    margin: 20px 20px;
+    margin: 0px 20px 2px 20px;
     text-align: left;
     max-height: 0;
     overflow: hidden;
@@ -453,9 +463,11 @@ a {
 /* when active */
 
 .project-row.active .project-details {
-    max-height: 220px;
+    /* max-height: 220px; */
+    max-height: 2000px; /* large enough to fit content */
     opacity: 1;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @keyframes detailsReveal{
@@ -600,7 +612,8 @@ a {
 
     /* responsive adjustments for project cards */
     .project-main { flex-direction: column; gap: 20px; }
-    .project-image, .project-info { width: 100%; }
+    /* .project-image, .project-info { width: 100%; } */
+    .project-info { padding: 0px 0px 20px 20px; }
     .project-info h2 { font-size: 1.25rem; margin-top: 20px; }
     .project-info p { font-size: 1rem; }
     .subhead h2 { font-size: 1.5rem; padding: 15px 30px; text-align: center; position: relative; transform: translateX(-50%);}

@@ -141,26 +141,106 @@
 				
 				<div class="highlighted-project">
 					<!-- Project 1 -->
-					<div class="project-row reveal-up" role="button" tabindex="0">
-
+					<div class="project-row reveal-up" role="button" tabindex="0" aria-expanded="false">
 						<div class="project-main">
 							<div class="project-image reveal-left">
-								<img src="images/slide_show/image_3.png">
+								<img src="images/hero_page/hero_page_image_0.png" alt="Gameplay screenshot of Pigeons & Students projected on a large surface">
 							</div>
 
 							<div class="project-info reveal-right">
-								<h2>Project One</h2>
-								<p>Short description of the project.</p>
+								<h2>Pigeons &amp; Students</h2>
+
+								<p class="project-subtitle">
+									Experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large projected playfield.
+								</p>
+
+								<div class="project-meta">
+									<span>Lead Systems &amp; Gameplay Designer</span>
+									<span>Full-Stack Developer</span>
+									<span>Solo Thesis</span>
+									<span>8 months</span>
+									<span>Web / Browser</span>
+								</div>
+
+								<p class="project-summary">
+									A projection-mapped social game that turns architecture into a playable arena, designed to remove setup friction by letting players join instantly through their phones.
+								</p>
+
+								<div class="project-hint">
+									<span>View case study</span>
+									<span class="chevron">⌄</span>
+								</div>
 							</div>
 						</div>
 
-						<!-- clicking the row toggles details -->
 						<div class="project-details reveal-up">
-							<h3>Dev Process</h3>
-							<p>How you built it...</p>
+							<section class="detail-block">
+								<h3>Project Snapshot</h3>
+								<ul class="project-facts">
+									<li><strong>Role:</strong> Lead Systems &amp; Gameplay Designer, Full-Stack Developer</li>
+									<li><strong>Engine / Tools:</strong> Vanilla JavaScript (p5.js), PHP, HTML/CSS, Aseprite</li>
+									<li><strong>Team Size:</strong> 1 (Solo Undergraduate Thesis)</li>
+									<li><strong>Duration:</strong> ~8 months, completed May 2023</li>
+									<li><strong>Platform:</strong> Web-based, cross-platform browser</li>
+									<li><strong>Context:</strong> Undergraduate thesis for the Department of Audio and Visual Arts at Ionian University</li>
+								</ul>
+							</section>
 
-							<h3>Technologies</h3>
-							<p>HTML, CSS, JS...</p>
+							<section class="detail-block">
+								<h3>Overview</h3>
+								<p>
+									Pigeons &amp; Students explores the intersection of projection mapping and local social play by transforming a building facade into a competitive multiplayer arena. Players connect through a QR code on their phones and use them as wireless controllers, allowing the experience to run in public space without dedicated hardware.
+								</p>
+							</section>
+
+							<section class="detail-block">
+								<h3>What I Designed</h3>
+								<ul class="project-list">
+									<li>Designed the core combat loop and overall multiplayer gameplay flow.</li>
+									<li>Created the character classes: Scholar, Painter, Metalhead, and Hacker.</li>
+									<li>Designed the bird-based power-up and penalty delivery system.</li>
+									<li>Built the complete full-stack communication pipeline between mobile controllers and the game screen.</li>
+									<li>Created a calibration dashboard for aligning spawn points and game elements to real architectural features.</li>
+									<li>Produced all pixel art assets and animations in Aseprite.</li>
+								</ul>
+							</section>
+
+							<section class="detail-block">
+								<h3>Design Goal</h3>
+								<p>
+									The core challenge was reducing the barrier to entry in local multiplayer. Instead of asking players to install software or use dedicated controllers, I designed the system so that joining a session was immediate: scan a QR code, open the browser, and play.
+								</p>
+							</section>
+
+							<section class="detail-block">
+								<h3>Process</h3>
+								<ul class="project-list">
+									<li><strong>Technology choice:</strong> I chose a web-based stack over Unity to support instant access, easier cross-device compatibility, and controller-free onboarding.</li>
+									<li><strong>Projection mapping alignment:</strong> I implemented a slider-based calibration tool so digital characters could be matched to real windows and architectural landmarks.</li>
+									<li><strong>Performance optimization:</strong> After testing on lower-power hardware, I refactored the AJAX update loop from frame-tied polling to a throttled 100ms interval, reducing CPU load while keeping controls responsive.</li>
+									<li><strong>Device constraints:</strong> I had to troubleshoot browser-based gyroscope access on iOS, where motion input required HTTPS and stricter permissions handling.</li>
+								</ul>
+							</section>
+
+							<section class="detail-block">
+								<h3>Outcome</h3>
+								<p>
+									The project was presented at the 16th Audiovisual Arts Festival in 2023 and tested in a public Game Hub setting. User testing produced a 6.6/7 score for player enjoyment and 6.1/7 for usability, while the QR-based onboarding and gyroscope aiming proved especially approachable for non-gamers.
+								</p>
+							</section>
+
+							<section class="detail-block">
+								<h3>Reflection</h3>
+								<p>
+									This project taught me how to design for both digital interaction and physical space at the same time. In future iterations, I would automate QR generation from the server IP and add active disconnect handling so player slots are released immediately when someone closes the controller page.
+								</p>
+							</section>
+
+							<section class="detail-block project-links">
+								<h3>Links &amp; Material</h3>
+								<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+								<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">Documentation / Thesis Material</a>
+							</section>
 						</div>
 					</div>
 
@@ -169,7 +249,7 @@
 
 						<div class="project-main">
 							<div class="project-image reveal-right">
-								<img src="images/slide_show/image_2.png">
+								<img src="images/hero_page/hero_page_image_1.png">
 							</div>
 
 							<div class="project-info reveal-left">
