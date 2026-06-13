@@ -374,7 +374,7 @@ a:hover {
 /* container for the image/info pair, laid out horizontally */
 .project-main {
     display:flex;
-    align-items:center;
+    /* align-items:center; */
     gap:0px;
     width:100%;
 }

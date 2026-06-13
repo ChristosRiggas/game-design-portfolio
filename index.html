@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<!-- <link type="text/css" rel="stylesheet" href="style/bootstrap.grid.css" />     -->
-	<link type="text/css" href="style/style_new.css" rel="stylesheet" />  
+	<link type="text/css" href="style/style_stats_block.css" rel="stylesheet" />  
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  <!-- This is an add -->
 	<script src="js/slideshow.js"></script>
 	<script src="js/trigger_on_scroll.js"></script> 
@@ -141,128 +141,411 @@
 				
 				<div class="highlighted-project">
 					<!-- Project 1 -->
-					<div class="project-row reveal-up" role="button" tabindex="0" aria-expanded="false">
+					<article class="project-row reveal-up" tabindex="0" role="button" aria-expanded="false">
 						<div class="project-main">
 							<div class="project-image reveal-left">
-								<img src="images/hero_page/hero_page_image_0.png" alt="Gameplay screenshot of Pigeons & Students projected on a large surface">
+								<img src="images/hero_page/hero_page_image_0.png" alt="Pigeons and Students gameplay projected on a building facade">
 							</div>
 
 							<div class="project-info reveal-right">
-								<h2>Pigeons &amp; Students</h2>
+								<div class="project-header">
+									<span class="project-number">Project 01</span>
+									<h2>Pigeons &amp; Students</h2>
+								</div>
 
-								<p class="project-subtitle">
-									Experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large projected playfield.
+								<p class="project-lead">
+									An experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large-scale projection.
 								</p>
 
-								<div class="project-meta">
-									<span>Lead Systems &amp; Gameplay Designer</span>
-									<span>Full-Stack Developer</span>
-									<span>Solo Thesis</span>
-									<span>8 months</span>
-									<span>Web / Browser</span>
+								<div class="project-tag-row">
+									<span class="project-tag">Systems Design</span>
+									<span class="project-tag">Gameplay Design</span>
+									<span class="project-tag">Full-Stack</span>
+									<span class="project-tag">Projection Mapping</span>
+									<span class="project-tag">Solo Thesis</span>
 								</div>
 
 								<p class="project-summary">
-									A projection-mapped social game that turns architecture into a playable arena, designed to remove setup friction by letting players join instantly through their phones.
+									The project turns architecture into a playable “battle royale” arena and explores how projection mapping and browser-based local multiplayer can create a frictionless social play experience.
 								</p>
 
-								<div class="project-hint">
-									<span>View case study</span>
-									<span class="chevron">⌄</span>
+								<div class="project-highlight-strip">
+									<div class="highlight-pill">
+										<span>Phone as controller</span>
+									</div>
+
+									<div class="highlight-pill">
+										<span>Building-scale play</span>
+									</div>
+
+									<div class="highlight-pill">
+										<span>Custom calibration tool</span>
+									</div>
+								</div>
+
+								<div class="expand-hint" aria-hidden="true">
+									<span class="expand-text">View case study</span>
+									<span class="expand-line"></span>
+									<span class="expand-chevron">⌄</span>
 								</div>
 							</div>
 						</div>
 
 						<div class="project-details reveal-up">
-							<section class="detail-block">
-								<h3>Project Snapshot</h3>
-								<ul class="project-facts">
-									<li><strong>Role:</strong> Lead Systems &amp; Gameplay Designer, Full-Stack Developer</li>
-									<li><strong>Engine / Tools:</strong> Vanilla JavaScript (p5.js), PHP, HTML/CSS, Aseprite</li>
-									<li><strong>Team Size:</strong> 1 (Solo Undergraduate Thesis)</li>
-									<li><strong>Duration:</strong> ~8 months, completed May 2023</li>
-									<li><strong>Platform:</strong> Web-based, cross-platform browser</li>
-									<li><strong>Context:</strong> Undergraduate thesis for the Department of Audio and Visual Arts at Ionian University</li>
-								</ul>
-							</section>
+							<div class="project-details-grid">
+								<section class="detail-panel detail-snapshot">
+									<h3>Project Snapshot</h3>
 
-							<section class="detail-block">
-								<h3>Overview</h3>
-								<p>
-									Pigeons &amp; Students explores the intersection of projection mapping and local social play by transforming a building facade into a competitive multiplayer arena. Players connect through a QR code on their phones and use them as wireless controllers, allowing the experience to run in public space without dedicated hardware.
-								</p>
-							</section>
+									<div class="quickfacts-grid">
+										<div class="fact-card">
+										<span class="fact-icon">◉</span>
+										<div>
+											<h4>Role</h4>
+											<p>Lead Systems &amp; Gameplay Designer, Full-Stack Developer</p>
+										</div>
+									</div>
 
-							<section class="detail-block">
-								<h3>What I Designed</h3>
-								<ul class="project-list">
-									<li>Designed the core combat loop and overall multiplayer gameplay flow.</li>
-									<li>Created the character classes: Scholar, Painter, Metalhead, and Hacker.</li>
-									<li>Designed the bird-based power-up and penalty delivery system.</li>
-									<li>Built the complete full-stack communication pipeline between mobile controllers and the game screen.</li>
-									<li>Created a calibration dashboard for aligning spawn points and game elements to real architectural features.</li>
-									<li>Produced all pixel art assets and animations in Aseprite.</li>
-								</ul>
-							</section>
+									<div class="fact-card">
+										<span class="fact-icon">⚙</span>
+										<div>
+											<h4>Tools</h4>
+											<p>Vanilla JavaScript, p5.js, PHP, HTML/CSS, Aseprite</p>
+										</div>
+									</div>
 
-							<section class="detail-block">
-								<h3>Design Goal</h3>
-								<p>
-									The core challenge was reducing the barrier to entry in local multiplayer. Instead of asking players to install software or use dedicated controllers, I designed the system so that joining a session was immediate: scan a QR code, open the browser, and play.
-								</p>
-							</section>
+									<div class="fact-card">
+										<span class="fact-icon">◎</span>
+										<div>
+											<h4>Team</h4>
+											<p>Solo undergraduate thesis project</p>
+										</div>
+									</div>
 
-							<section class="detail-block">
-								<h3>Process</h3>
-								<ul class="project-list">
-									<li><strong>Technology choice:</strong> I chose a web-based stack over Unity to support instant access, easier cross-device compatibility, and controller-free onboarding.</li>
-									<li><strong>Projection mapping alignment:</strong> I implemented a slider-based calibration tool so digital characters could be matched to real windows and architectural landmarks.</li>
-									<li><strong>Performance optimization:</strong> After testing on lower-power hardware, I refactored the AJAX update loop from frame-tied polling to a throttled 100ms interval, reducing CPU load while keeping controls responsive.</li>
-									<li><strong>Device constraints:</strong> I had to troubleshoot browser-based gyroscope access on iOS, where motion input required HTTPS and stricter permissions handling.</li>
-								</ul>
-							</section>
+									<div class="fact-card">
+										<span class="fact-icon">◷</span>
+										<div>
+											<h4>Duration</h4>
+											<p>~6 months, completed May 2023</p>
+										</div>
+									</div>
 
-							<section class="detail-block">
-								<h3>Outcome</h3>
-								<p>
-									The project was presented at the 16th Audiovisual Arts Festival in 2023 and tested in a public Game Hub setting. User testing produced a 6.6/7 score for player enjoyment and 6.1/7 for usability, while the QR-based onboarding and gyroscope aiming proved especially approachable for non-gamers.
-								</p>
-							</section>
+									<div class="fact-card">
+										<span class="fact-icon">◈</span>
+										<div>
+											<h4>Platform</h4>
+											<p>Web-based, cross-platform browser experience</p>
+										</div>
+									</div>
 
-							<section class="detail-block">
-								<h3>Reflection</h3>
-								<p>
-									This project taught me how to design for both digital interaction and physical space at the same time. In future iterations, I would automate QR generation from the server IP and add active disconnect handling so player slots are released immediately when someone closes the controller page.
-								</p>
-							</section>
+									<div class="fact-card">
+										<span class="fact-icon">▣</span>
+										<div>
+											<h4>Project Type</h4>
+											<p>Undergraduate thesis, Ionian University</p>
+										</div>
+									</div>
+									</div>
+								</section>
 
-							<section class="detail-block project-links">
-								<h3>Links &amp; Material</h3>
-								<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-								<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">Documentation / Thesis Material</a>
-							</section>
+								<section class="detail-panel detail-challenge">
+									<h3>Design Challenge</h3>
+									<p>
+										The main goal was to create a local multiplayer game with almost zero setup friction. Instead of requiring dedicated controllers, installations, or complex pairing, I designed the system so players could join instantly by scanning a QR code and using their phones as controllers.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-contributions">
+									<h3>Key Contributions</h3>
+
+									<div class="contribution-cards">
+										<div class="contribution-card">
+											<h4>Real-time controller system</h4>
+											<p>Built an asynchronous communication pipeline with PHP and AJAX to connect multiple mobile devices to the projected game screen.</p>
+										</div>
+
+										<div class="contribution-card">
+
+											<h4>Gameplay and systems design</h4>
+											<p>Designed the combat loop, playable classes, and the bird-based power-up and penalty delivery system.</p>
+										</div>
+
+										<div class="contribution-card">
+											<h4>Projection calibration tool</h4>
+											<p>Created an admin dashboard that aligned spawn points and game elements with real architectural features such as windows.</p>
+										</div>
+									</div>
+								</section>
+
+								<section class="detail-panel detail-process">
+									<h3>Process &amp; Decisions</h3>
+
+									<div class="process-steps">
+										<div class="process-item">
+											<h4>Why web instead of Unity</h4>
+											<p>
+												I chose a web-based stack to maximize accessibility and cross-device compatibility. This let players join instantly through the browser without plugins, downloads, or platform-specific setup.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Designing for buildings</h4>
+											<p>
+												To make characters feel physically embedded in the projection surface, I implemented a slider-based calibration system that matched digital spawn points to real windows and facade features.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Performance optimization</h4>
+											<p>
+												Testing on lower-power hardware revealed that continuous AJAX polling was too expensive. I refactored the refresh loop from frame-rate-tied updates to a throttled 100ms interval, reducing CPU load while keeping gameplay responsive.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Platform constraint</h4>
+											<p>
+												During development, I had to troubleshoot iOS browser restrictions around gyroscope access, which required specific HTTPS permissions before motion controls would function reliably.
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<section class="detail-panel detail-outcome">
+									<h3>Outcome</h3>
+									<p>
+										The project was showcased at the 16th Audiovisual Arts Festival in 2023 and tested in a public Game Hub setting. The strongest result was how naturally people understood the QR-code-to-controller flow and how intuitive the gyroscope aiming felt, especially for non-gamers.
+									</p>
+
+									<p class="detail-note">
+										Public user testing supported the overall playability and usability of the experience, but for portfolio purposes the most important takeaway is that the concept worked successfully in a real exhibition environment.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-next">
+									<h3>Reflection</h3>
+									<p>
+										This project taught me how to design a game across both digital and physical space, balancing systems design, technical implementation, and public installation constraints. If I continue it, I would automate QR generation from the server IP and add active disconnect handling so player slots free up immediately when a browser closes.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-links">
+									<h3>Links</h3>
+									<div class="project-link-row">
+										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>GitHub Repository</span>
+											<span>↗</span>
+										</a>
+									</div>
+								</section>
+							</div>
 						</div>
-					</div>
+					</article>
 
 					<!-- Project 2 -->
-					<div class="project-row reverse reveal-up" role="button" tabindex="0">
-
+					<article class="project-row reverse reveal-up" tabindex="0" role="button" aria-expanded="false">
 						<div class="project-main">
-							<div class="project-image reveal-right">
-								<img src="images/hero_page/hero_page_image_1.png">
+							<div class="project-image reveal-left">
+								<img src="images/hero_page/hero_page_image_1.png" alt="Pigeons and Students gameplay projected on a building facade">
 							</div>
 
-							<div class="project-info reveal-left">
-								<h2>Project Two</h2>
-								<p>Short description of the project.</p>
+							<div class="project-info reveal-right">
+								<div class="project-header">
+									<span class="project-number">Project 02</span>
+									<h2>Pigeons &amp; Students</h2>
+								</div>
+
+								<p class="project-lead">
+									An experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large-scale projection.
+								</p>
+
+								<div class="project-tag-row">
+									<span class="project-tag">Systems Design</span>
+									<span class="project-tag">Gameplay Design</span>
+									<span class="project-tag">Full-Stack</span>
+									<span class="project-tag">Projection Mapping</span>
+									<span class="project-tag">Solo Thesis</span>
+								</div>
+
+								<p class="project-summary">
+									The project turns architecture into a playable “battle royale” arena and explores how projection mapping and browser-based local multiplayer can create a frictionless social play experience.
+								</p>
+
+								<div class="project-highlight-strip">
+									<div class="highlight-pill">
+										<span>Phone as controller</span>
+									</div>
+
+									<div class="highlight-pill">
+										<span>Building-scale play</span>
+									</div>
+
+									<div class="highlight-pill">
+										<span>Custom calibration tool</span>
+									</div>
+								</div>
+
+								<div class="expand-hint" aria-hidden="true">
+									<span class="expand-text">View case study</span>
+									<span class="expand-line"></span>
+									<span class="expand-chevron">⌄</span>
+								</div>
 							</div>
 						</div>
 
-						<!-- clicking the row toggles details -->
 						<div class="project-details reveal-up">
-							<p>Details...</p>
+							<div class="project-details-grid">
+								<section class="detail-panel detail-snapshot">
+									<h3>Project Snapshot</h3>
+
+									<div class="quickfacts-grid">
+										<div class="fact-card">
+										<span class="fact-icon">◉</span>
+										<div>
+											<h4>Role</h4>
+											<p>Lead Systems &amp; Gameplay Designer, Full-Stack Developer</p>
+										</div>
+									</div>
+
+									<div class="fact-card">
+										<span class="fact-icon">⚙</span>
+										<div>
+											<h4>Tools</h4>
+											<p>Vanilla JavaScript, p5.js, PHP, HTML/CSS, Aseprite</p>
+										</div>
+									</div>
+
+									<div class="fact-card">
+										<span class="fact-icon">◎</span>
+										<div>
+											<h4>Team</h4>
+											<p>Solo undergraduate thesis project</p>
+										</div>
+									</div>
+
+									<div class="fact-card">
+										<span class="fact-icon">◷</span>
+										<div>
+											<h4>Duration</h4>
+											<p>~6 months, completed May 2023</p>
+										</div>
+									</div>
+
+									<div class="fact-card">
+										<span class="fact-icon">◈</span>
+										<div>
+											<h4>Platform</h4>
+											<p>Web-based, cross-platform browser experience</p>
+										</div>
+									</div>
+
+									<div class="fact-card">
+										<span class="fact-icon">▣</span>
+										<div>
+											<h4>Project Type</h4>
+											<p>Undergraduate thesis, Ionian University</p>
+										</div>
+									</div>
+									</div>
+								</section>
+
+								<section class="detail-panel detail-challenge">
+									<h3>Design Challenge</h3>
+									<p>
+										The main goal was to create a local multiplayer game with almost zero setup friction. Instead of requiring dedicated controllers, installations, or complex pairing, I designed the system so players could join instantly by scanning a QR code and using their phones as controllers.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-contributions">
+									<h3>Key Contributions</h3>
+
+									<div class="contribution-cards">
+										<div class="contribution-card">
+											<h4>Real-time controller system</h4>
+											<p>Built an asynchronous communication pipeline with PHP and AJAX to connect multiple mobile devices to the projected game screen.</p>
+										</div>
+
+										<div class="contribution-card">
+
+											<h4>Gameplay and systems design</h4>
+											<p>Designed the combat loop, playable classes, and the bird-based power-up and penalty delivery system.</p>
+										</div>
+
+										<div class="contribution-card">
+											<h4>Projection calibration tool</h4>
+											<p>Created an admin dashboard that aligned spawn points and game elements with real architectural features such as windows.</p>
+										</div>
+									</div>
+								</section>
+
+								<section class="detail-panel detail-process">
+									<h3>Process &amp; Decisions</h3>
+
+									<div class="process-steps">
+										<div class="process-item">
+											<h4>Why web instead of Unity</h4>
+											<p>
+												I chose a web-based stack to maximize accessibility and cross-device compatibility. This let players join instantly through the browser without plugins, downloads, or platform-specific setup.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Designing for buildings</h4>
+											<p>
+												To make characters feel physically embedded in the projection surface, I implemented a slider-based calibration system that matched digital spawn points to real windows and facade features.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Performance optimization</h4>
+											<p>
+												Testing on lower-power hardware revealed that continuous AJAX polling was too expensive. I refactored the refresh loop from frame-rate-tied updates to a throttled 100ms interval, reducing CPU load while keeping gameplay responsive.
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Platform constraint</h4>
+											<p>
+												During development, I had to troubleshoot iOS browser restrictions around gyroscope access, which required specific HTTPS permissions before motion controls would function reliably.
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<section class="detail-panel detail-outcome">
+									<h3>Outcome</h3>
+									<p>
+										The project was showcased at the 16th Audiovisual Arts Festival in 2023 and tested in a public Game Hub setting. The strongest result was how naturally people understood the QR-code-to-controller flow and how intuitive the gyroscope aiming felt, especially for non-gamers.
+									</p>
+
+									<p class="detail-note">
+										Public user testing supported the overall playability and usability of the experience, but for portfolio purposes the most important takeaway is that the concept worked successfully in a real exhibition environment.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-next">
+									<h3>Reflection</h3>
+									<p>
+										This project taught me how to design a game across both digital and physical space, balancing systems design, technical implementation, and public installation constraints. If I continue it, I would automate QR generation from the server IP and add active disconnect handling so player slots free up immediately when a browser closes.
+									</p>
+								</section>
+
+								<section class="detail-panel detail-links">
+									<h3>Links</h3>
+									<div class="project-link-row">
+										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>GitHub Repository</span>
+											<span>↗</span>
+										</a>
+
+										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>Documentation / Thesis Material</span>
+											<span>↗</span>
+										</a>
+									</div>
+								</section>
+							</div>
 						</div>
-					</div>
+					</article>
 
 				</div>
 
