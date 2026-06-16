@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightboxImage = document.getElementById("lightboxImage");
     const lightboxClose = document.getElementById("lightboxClose");
 
-    const pageImages = document.querySelectorAll(".project-image img, .card-images img, .detail-panel img");
+    const pageImages = document.querySelectorAll(".project-image img, .card-images img, .detail-panel img, .project-card-short img");
 
     pageImages.forEach((img) => {
         img.style.cursor = "zoom-in";
