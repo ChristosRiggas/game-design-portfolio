@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #9c44b3;
 }
 
@@ -197,12 +197,13 @@ a:hover {
    SLIDESHOW
 ========================= */
 .slideshow-container {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     overflow: hidden;
     position: relative;
     margin: auto;
-    transform: scale(1.02);
+    transform: scale(1.04);
     transition: opacity 1s ease, transform 1s ease;
+    background: #100e14e6;
 }
 
 .slideshow-container.loaded .slide img {
@@ -267,6 +268,11 @@ a:hover {
     opacity: 0;
 }
 
+.slide-text h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
 .prev,
 .next {
     cursor: pointer;
@@ -305,13 +311,13 @@ a:hover {
     gap: 20px;
     margin-top: 19px;
     background-color: #1c1c1ca6;
-    padding: 20px;
+    padding: 30px;
 }
 
 .projects-hero {
     flex: 1;
     gap: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     margin-top: 50px;
 }
 
@@ -327,7 +333,7 @@ a:hover {
 
 .projects-list .project-row {
     margin-top: 10px;
-    background: #161616;
+    background: #16161650;
 }
 
 .projects-list .project-info h2 {
@@ -341,12 +347,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgba(20, 20, 24, 0.92);
+    background: rgba(24, 20, 23, 0.467);
     border: 1px solid rgba(234, 148, 255, 0.08);
     border-radius: 18px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
     max-width: 1600px;
     margin: auto;
     backdrop-filter: blur(6px);
@@ -355,13 +360,21 @@ a:hover {
         box-shadow 0.14s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.project-row:hover {
-    transform: translateY(-1px);
+#project-1 {
+    background: #201a11c9;
 }
 
-.project-row:active {
-    transform: scale(0.985);
+#project-2 {
+    background: #2a1229c9;
 }
+
+.project-row:hover {
+    transform: translateY(-2px);
+}
+
+/* .project-row:active {
+    transform: scale(1.00002);
+} */
 
 .project-main {
     display: flex;
@@ -373,6 +386,7 @@ a:hover {
 .project-row.reverse .project-main {
     flex-direction: row-reverse;
 }
+
 
 /* =========================
    PROJECT IMAGE
@@ -395,6 +409,7 @@ a:hover {
     border-radius: 0;
     transform: scale(1.02);
     transition: transform 0.45s ease;
+    cursor: zoom-in;
 }
 
 .project-row:hover .project-image img {
@@ -497,7 +512,8 @@ a:hover {
 
 /* Expand hint */
 .expand-hint {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 20px;
     padding-top: 18px;
     border-top: 1px solid rgba(234, 148, 255, 0.12);
     display: flex;
@@ -505,6 +521,9 @@ a:hover {
     gap: 12px;
     color: #f3c1ff;
     opacity: 0.9;
+    cursor: pointer;
+    background: transparent;
+    text-align: left;
 }
 
 .expand-text {
@@ -527,6 +546,76 @@ a:hover {
 
 .project-row.active .expand-chevron {
     transform: rotate(180deg);
+}
+
+button.expand-hint {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid rgba(234, 148, 255, 0.12);
+    padding-left: 0;
+    padding-right: 0;
+    font: inherit;
+}
+
+button.expand-toggle {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    font: inherit;
+}
+
+.expand-hint:hover,
+.project-close-btn:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.expand-hint:hover .expand-line,
+.project-close-btn:hover .expand-line {
+    background: linear-gradient(to right, rgba(234, 148, 255, 0.75), rgba(234, 148, 255, 0.12));
+}
+
+.expand-hint:hover .expand-chevron,
+.project-close-btn:hover .expand-chevron {
+    transform: translateY(1px);
+}
+
+/* =========================
+   PROJECT DETAILS - GALLERY
+========================= */
+.detail-gallery {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.card-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.card-image-item {
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    aspect-ratio: 16 / 10;
+}
+
+.card-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.45s ease, opacity 0.35s ease;
+}
+
+.card-image-item:hover img {
+    transform: scale(1.02);
 }
 
 /* =========================
@@ -564,7 +653,7 @@ a:hover {
 }
 
 .project-row.active .project-details {
-    max-height: 3600px;
+    max-height: 10600px;
     opacity: 1;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -794,6 +883,60 @@ a:hover {
 }
 
 /* =========================
+    LIGHTBOX
+========================= */
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 14, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox-image {
+    max-width: 92vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
    CONTACT
 ========================= */
 .contact-info {
@@ -894,17 +1037,24 @@ a:hover {
         display: none;
     }
 
+    .slideshow-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        transform: scale(1.04);
+    }
+
+    .slide img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
     .slide-text {
         left: 20px;
         bottom: 20px;
         font-size: 14px;
         padding: 10px;
-    }
-
-    .slide img {
-        width: 1080px;
-        height: auto;
-        max-height: 50vh;
     }
 
     .arrows {
@@ -1026,5 +1176,14 @@ a:hover {
     .project-link-btn {
         width: 100%;
         min-width: 0;
+    }
+
+    .card-images {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .card-image-item {
+        aspect-ratio: 16 / 11;
     }
 }

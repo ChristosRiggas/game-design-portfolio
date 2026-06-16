@@ -9,12 +9,13 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  <!-- This is an add -->
 	<script src="js/slideshow.js"></script>
 	<script src="js/trigger_on_scroll.js"></script> 
+	<script src="js/lightbox.js"></script>
 </head>
 
 <body>
 	<div class="page-container">
 
-		<img class="background" src="images/photo-1690321607729-bce901c77324.png" alt="Background Image">
+		<img class="background" src="images/magical-mystical-landscape-wallpaper-purple-tones.png" alt="Background Image">
 
 		<header class="header">
 			<a href="index.html"><h1 class="logo">Christos Ringas</h1> </a>
@@ -48,7 +49,7 @@
 					</div>
 				</div>
 
-				<a href="resume/Christos Ringas CV - Developer 2025.pdf" download>Resume</a>
+				<a href="resume/christos_ringas_cv_15-06-2026.pdf" download>Resume</a>
 				<a href="contact.html">Contact</a>
 
 			</nav>
@@ -61,8 +62,8 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_1.png"></a>
 						<div class="slide-text">
-							<h3>Louvre</h3>
-							<p>The world's largest art museum in Paris.</p>
+							<h3>Pigeons and Students</h3>
+							<p>An experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large-scale projection.</p>
 						</div>
 					</div>	
 				</div>
@@ -71,8 +72,8 @@
 					<div class="slide-inner">
 						<a href="projects.html"><img src="images/slide_show/image_2.png"></a>
 						<div class="slide-text">
-							<h3>Buckingham Palace</h3>
-							<p>London residence of the British monarchy.</p>
+							<h3>The Unfortunates</h3>
+							<p>A narrative-heavy “cozy dystopia” adventure set in a surreal branch of purgatory, where players guide newly arrived spirits toward reincarnation through conversations and small but emotionally charged choices.</p>
 						</div>
 					</div>
 				</div>
@@ -126,9 +127,10 @@
 
 			<div class="content subhead reveal-up" id="m"> <h2 class="selected"> About Me </h2>		
 				<div class="subcontent">	
-					<p class="ins"> Europe was home to some of the world's most advanced civilisations, which has led to an astonishing cultural heritage today. Ancient Greece has been credited with the foundation of Western culture, and has been immensely influential on the language, politics, educational systems, philosophy, science, and arts of the European continent. Ancient Greek structures are scattered over Greece and Turkey, including Delphi, Olympia, Sparta, Ephesus, Lycia and of course the Parthenon in Athens.
-						<br><br>
-						Ancient Greece was followed by the Roman Empire, one of the greatest civilisations in the world that took hold of large swathes of Europe, North Africa and the Middle East. Visiting Roman ruins in Rome is a no-brainer, with the magnificent Colosseum, Pantheon and the Roman Forum. Many Roman ruins can also be found in Spain, such as the remains at Merida, Italica, Segovia, Toledo and Terragona. With 47 sites, Italy has the most UNESCO World Heritage Sites of any country in the world, directly followed by Spain with 43.
+					<p class="ins"> Hi, my name is Christos and I'm currently living in Gothenburg, Sweden. I am a master’s in game design and technology at Gothenburg University graduate seeking employment. I have experience with various audio and visual production software, programming languages, and software development frameworks. I am equipped with diverse skills, with my interests lying in Game Design and Game Development. I am well organized, punctual, and dedicated in my working environment. 						
+					</p>
+						<br>
+					<p class="ins"> I am passionate about creating engaging and immersive experiences that push the boundaries of traditional game design. With a strong background in both art and programming, I strive to blend creativity with technical expertise to craft unique and memorable games.
 					</p>
 					<div>  
 						<br><br> <a href="projects.html" > Game Projects </a>
@@ -141,10 +143,10 @@
 				
 				<div class="highlighted-project">
 					<!-- Project 1 -->
-					<article class="project-row reveal-up" tabindex="0" role="button" aria-expanded="false">
+					<article id="project-1" class="project-row reveal-up" tabindex="0" role="button" aria-expanded="false">
 						<div class="project-main">
 							<div class="project-image reveal-left">
-								<img src="images/hero_page/hero_page_image_0.png" alt="Pigeons and Students gameplay projected on a building facade">
+								<img src="images/hero_page/hero_page_image_1.png" alt="Pigeons and Students gameplay projected on a building facade">
 							</div>
 
 							<div class="project-info reveal-right">
@@ -335,52 +337,66 @@
 											<span>GitHub Repository</span>
 											<span>↗</span>
 										</a>
+										
+										<a href="reports/thesis_2d_shoter_mobile_report.pdf" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>Thesis Report</span>
+											<span>↗</span>
+										</a>
 									</div>
 								</section>
 							</div>
+
+						<div class="project-details-close-wrap">
+							<button class="expand-hint project-close-btn" type="button">
+								<span class="expand-text">Close case study</span>
+								<span class="expand-line"></span>
+								<span class="expand-chevron">⌃</span>
+							</button>
+						</div>
+
 						</div>
 					</article>
 
 					<!-- Project 2 -->
-					<article class="project-row reverse reveal-up" tabindex="0" role="button" aria-expanded="false">
+					<article id="project-2" class="project-row reveal-up reverse" tabindex="0" role="button" aria-expanded="false">
 						<div class="project-main">
 							<div class="project-image reveal-left">
-								<img src="images/hero_page/hero_page_image_1.png" alt="Pigeons and Students gameplay projected on a building facade">
+								<img src="images/hero_page/hero_page_image_2.png" alt="The Unfortunates gameplay scene showing the floating island and dialogue interaction">
 							</div>
 
 							<div class="project-info reveal-right">
 								<div class="project-header">
 									<span class="project-number">Project 02</span>
-									<h2>Pigeons &amp; Students</h2>
+									<h2>The Unfortunates</h2>
 								</div>
 
 								<p class="project-lead">
-									An experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large-scale projection.
+									A narrative-heavy “cozy dystopia” adventure set in a surreal branch of purgatory, where players guide newly arrived spirits toward reincarnation through conversations and small but emotionally charged choices.
 								</p>
 
 								<div class="project-tag-row">
-									<span class="project-tag">Systems Design</span>
-									<span class="project-tag">Gameplay Design</span>
-									<span class="project-tag">Full-Stack</span>
-									<span class="project-tag">Projection Mapping</span>
-									<span class="project-tag">Solo Thesis</span>
+									<span class="project-tag">Developer</span>
+									<span class="project-tag">Game Design</span>
+									<span class="project-tag">Game Systems</span>
+									<span class="project-tag">Animations</span>
+									<span class="project-tag">Balancing</span>
 								</div>
 
 								<p class="project-summary">
-									The project turns architecture into a playable “battle royale” arena and explores how projection mapping and browser-based local multiplayer can create a frictionless social play experience.
+									Built as a semester-long team project in Unity, the game explores a design contradiction: how to make player choices feel meaningful inside a story that ultimately argues fate is unavoidable. My work focused on gameplay programming, dialogue systems, iteration, and making narrative interactions feel more responsive and alive. 
 								</p>
 
 								<div class="project-highlight-strip">
 									<div class="highlight-pill">
-										<span>Phone as controller</span>
+										<span>Custom dialogue tooling</span>
 									</div>
 
 									<div class="highlight-pill">
-										<span>Building-scale play</span>
+										<span>Choice-driven systems</span>
 									</div>
 
 									<div class="highlight-pill">
-										<span>Custom calibration tool</span>
+										<span>Atmospheric polish</span>
 									</div>
 								</div>
 
@@ -399,113 +415,160 @@
 
 									<div class="quickfacts-grid">
 										<div class="fact-card">
-										<span class="fact-icon">◉</span>
-										<div>
-											<h4>Role</h4>
-											<p>Lead Systems &amp; Gameplay Designer, Full-Stack Developer</p>
+											<span class="fact-icon">◉</span>
+											<div>
+												<h4>Role</h4>
+												<p>Gameplay Programmer &amp; Systems Designer</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="fact-card">
-										<span class="fact-icon">⚙</span>
-										<div>
-											<h4>Tools</h4>
-											<p>Vanilla JavaScript, p5.js, PHP, HTML/CSS, Aseprite</p>
+										<div class="fact-card">
+											<span class="fact-icon">⚙</span>
+											<div>
+												<h4>Tools</h4>
+												<p>Unity (C#), GraphView, Git/GitHub, Trello, Aseprite, bfxr.net</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="fact-card">
-										<span class="fact-icon">◎</span>
-										<div>
-											<h4>Team</h4>
-											<p>Solo undergraduate thesis project</p>
+										<div class="fact-card">
+											<span class="fact-icon">◎</span>
+											<div>
+												<h4>Team</h4>
+												<p>6-person university team</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="fact-card">
-										<span class="fact-icon">◷</span>
-										<div>
-											<h4>Duration</h4>
-											<p>~6 months, completed May 2023</p>
+										<div class="fact-card">
+											<span class="fact-icon">◷</span>
+											<div>
+												<h4>Duration</h4>
+												<p>Semester-long project, completed Nov 2025</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="fact-card">
-										<span class="fact-icon">◈</span>
-										<div>
-											<h4>Platform</h4>
-											<p>Web-based, cross-platform browser experience</p>
+										<div class="fact-card">
+											<span class="fact-icon">◈</span>
+											<div>
+												<h4>Platform</h4>
+												<p>Windows &amp; Mac</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="fact-card">
-										<span class="fact-icon">▣</span>
-										<div>
-											<h4>Project Type</h4>
-											<p>Undergraduate thesis, Ionian University</p>
+										<div class="fact-card">
+											<span class="fact-icon">▣</span>
+											<div>
+												<h4>Project Type</h4>
+												<p>Collaborative university project, agile development</p>
+											</div>
 										</div>
-									</div>
 									</div>
 								</section>
 
 								<section class="detail-panel detail-challenge">
 									<h3>Design Challenge</h3>
 									<p>
-										The main goal was to create a local multiplayer game with almost zero setup friction. Instead of requiring dedicated controllers, installations, or complex pairing, I designed the system so players could join instantly by scanning a QR code and using their phones as controllers.
+										The core challenge was balancing player agency with a deliberately nihilistic narrative. We wanted conversations and judgments to feel emotionally significant even when the larger story suggests that none of the player’s decisions can truly escape fate.
 									</p>
 								</section>
 
 								<section class="detail-panel detail-contributions">
-									<h3>Key Contributions</h3>
+									<h3>My Contributions</h3>
 
 									<div class="contribution-cards">
 										<div class="contribution-card">
-											<h4>Real-time controller system</h4>
-											<p>Built an asynchronous communication pipeline with PHP and AJAX to connect multiple mobile devices to the projected game screen.</p>
+											<h4>Developer</h4>
+											<p>
+												Implemented gameplay systems in Unity, including 2D platforming movement, parallax effects, environmental interactions, and event-based dialogue actions that connected narrative beats to in-game behavior. 
+											</p>
 										</div>
 
 										<div class="contribution-card">
-
-											<h4>Gameplay and systems design</h4>
-											<p>Designed the combat loop, playable classes, and the bird-based power-up and penalty delivery system.</p>
+											<h4>Game Design</h4>
+											<p>
+												Helped shape a “cozy dystopia” experience where relaxed traversal and melancholic storytelling reinforce each other, with choices designed to provoke reflection rather than branch into radically different outcomes. 
+											</p>
 										</div>
 
 										<div class="contribution-card">
-											<h4>Projection calibration tool</h4>
-											<p>Created an admin dashboard that aligned spawn points and game elements with real architectural features such as windows.</p>
+											<h4>Game Systems</h4>
+											<p>
+												Co-developed the dialogue system and the end-game statistics system, giving the player feedback on their choices and strengthening the sense that their actions had emotional and thematic weight. 
+											</p>
+										</div>
+
+										<div class="contribution-card">
+											<h4>Animations</h4>
+											<p>
+												Worked on polish and motion feedback, including changes that made environmental props and interactions feel intentional and atmospheric rather than static or bug-like to players. 
+											</p>
+										</div>
+
+										<div class="contribution-card">
+											<h4>Balancing</h4>
+											<p>
+												Used playtesting feedback to adjust pacing, interaction variety, and the rhythm of dialogue events so the experience stayed emotionally engaging instead of repetitive or overly predictable. 
+											</p>
 										</div>
 									</div>
 								</section>
 
+								<section class="detail-panel detail-gallery">
+									<h3>Gallery</h3>
+
+									<div class="card-images">
+										<figure class="card-image-item">
+											<img src="images/hero_page/more_images/the_unfortunates/the_unfortunates_1.png" alt="The Unfortunates gameplay scene showing the floating island and dialogue interaction">
+										</figure>
+
+										<figure class="card-image-item">
+											<img src="images/hero_page/more_images/the_unfortunates/the_unfortunates_2.png" alt="Dialogue scene from The Unfortunates showing a character portrait and branching text">
+										</figure>
+									</div>
+								</section>
+
 								<section class="detail-panel detail-process">
-									<h3>Process &amp; Decisions</h3>
+									<h3>Process &amp; Iteration</h3>
 
 									<div class="process-steps">
 										<div class="process-item">
-											<h4>Why web instead of Unity</h4>
+											<h4>Concept development</h4>
 											<p>
-												I chose a web-based stack to maximize accessibility and cross-device compatibility. This let players join instantly through the browser without plugins, downloads, or platform-specific setup.
+												The team used a modified brainwriting approach to quickly generate ideas around the contradictory theme “Cozy Dystopia,” which helped establish the project pillars of cozy gameplay and a dystopian story. 
 											</p>
 										</div>
 
 										<div class="process-item">
-											<h4>Designing for buildings</h4>
+											<h4>Narrative shift</h4>
 											<p>
-												To make characters feel physically embedded in the projection surface, I implemented a slider-based calibration system that matched digital spawn points to real windows and facade features.
+												The original bureaucratic office setting evolved into an ethereal floating-island purgatory, which better supported both the surreal tone and more expressive level design.
 											</p>
 										</div>
 
 										<div class="process-item">
-											<h4>Performance optimization</h4>
+											<h4>Dialogue tooling</h4>
 											<p>
-												Testing on lower-power hardware revealed that continuous AJAX polling was too expensive. I refactored the refresh loop from frame-rate-tied updates to a throttled 100ms interval, reducing CPU load while keeping gameplay responsive.
+												To support branching conversations efficiently, I worked with a custom GraphView-based dialogue tool that allowed the team to author text while also triggering gameplay-specific events such as hugs and other scripted moments.
 											</p>
 										</div>
 
 										<div class="process-item">
-											<h4>Platform constraint</h4>
+											<h4>Breaking predictability</h4>
 											<p>
-												During development, I had to troubleshoot iOS browser restrictions around gyroscope access, which required specific HTTPS permissions before motion controls would function reliably.
+												After feedback suggested that the dialogue loop became too formulaic, we introduced “break-the-formula” moments and special event commands to make interactions feel more intimate, surprising, and memorable. 
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Player readability</h4>
+											<p>
+												Early testers misread some visual elements, such as judgment hooks, as bugs. Instead of removing them, we added motion and polish so they felt atmospheric and intentional inside the world. 
+											</p>
+										</div>
+
+										<div class="process-item">
+											<h4>Game feel and polish</h4>
+											<p>
+												We refined simple mechanics with audiovisual feedback, including reactions for landing and environmental ambience, to make the space feel responsive despite the small scope of the interaction model. 
 											</p>
 										</div>
 									</div>
@@ -514,36 +577,54 @@
 								<section class="detail-panel detail-outcome">
 									<h3>Outcome</h3>
 									<p>
-										The project was showcased at the 16th Audiovisual Arts Festival in 2023 and tested in a public Game Hub setting. The strongest result was how naturally people understood the QR-code-to-controller flow and how intuitive the gyroscope aiming felt, especially for non-gamers.
+										The Unfortunates succeeded as a polished small-scope narrative game and received a strong immersion rating in the final evaluation. Players described the experience as cozy, dark, mysterious, philosophical, and emotionally engaging, which aligned closely with the intended tone. 
 									</p>
 
 									<p class="detail-note">
-										Public user testing supported the overall playability and usability of the experience, but for portfolio purposes the most important takeaway is that the concept worked successfully in a real exhibition environment.
+										One of the most useful design takeaways was that the statistics screen helped give retrospective meaning to player choices, especially in a game where the narrative intentionally limits direct agency.
 									</p>
 								</section>
 
 								<section class="detail-panel detail-next">
 									<h3>Reflection</h3>
 									<p>
-										This project taught me how to design a game across both digital and physical space, balancing systems design, technical implementation, and public installation constraints. If I continue it, I would automate QR generation from the server IP and add active disconnect handling so player slots free up immediately when a browser closes.
+										This project taught me how much “polish” shapes player perception, especially in a dialogue-driven game with relatively simple mechanics. I also learned how useful custom tools can be when they help narrative design, implementation, and iteration happen in the same workflow. 
+									</p>
+
+									<p>
+										If I continued the project, I would expand the reincarnation outcomes with more visible transformation feedback so players could see the consequence of each spirit’s final fate more directly. 
 									</p>
 								</section>
 
 								<section class="detail-panel detail-links">
 									<h3>Links</h3>
 									<div class="project-link-row">
-										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-											<span>GitHub Repository</span>
+										<a href="https://birklerviks.itch.io/the-unfortunates" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>Game Page</span>
 											<span>↗</span>
 										</a>
 
-										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-											<span>Documentation / Thesis Material</span>
+										<!-- <a href="https://github.com/birklerviks/nice-frogs" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>GitHub Repository</span>
+											<span>↗</span>
+										</a> -->
+
+										<a href="reports/the_unfortunates_report.pdf" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+											<span>Development Report</span>
 											<span>↗</span>
 										</a>
 									</div>
 								</section>
 							</div>
+
+							<div class="project-details-close-wrap">
+								<button class="expand-hint project-close-btn" type="button">
+									<span class="expand-text">Close case study</span>
+									<span class="expand-line"></span>
+									<span class="expand-chevron">⌃</span>
+								</button>
+							</div>
+
 						</div>
 					</article>
 
@@ -561,10 +642,15 @@
 
 		<!-- </div>	 -->
 
-		<div id="anchor">
+		<!-- <div id="anchor">
 			<a href="#top"><img id="anchor_img" src="images/arrow.png" alt="Back to top"/></a>
-		</div>
+		</div> -->
 
+	</div>
+
+	<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+		<button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+		<img class="lightbox-image" id="lightboxImage" src="" alt="">
 	</div>
 
 </body>

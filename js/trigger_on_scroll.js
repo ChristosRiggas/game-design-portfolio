@@ -30,18 +30,46 @@ window.addEventListener("load", () => {
     // Toggle project card details when the entire row is clicked
     // previously this was tied to the button
 
-    document.querySelectorAll(".project-row").forEach(row => {
-         // click toggles details
-        row.addEventListener("click", () => {
-            row.classList.toggle("active");
-        });
+    document.querySelectorAll(".project-row").forEach((row) => {
+        const openToggle = row.querySelector(".expand-hint");
+        const closeButtons = row.querySelectorAll(".project-close-btn");
 
-        // allow keyboard activation (Enter/Space)
-        row.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                row.classList.toggle("active");
+        function toggleCard(forceClose = false) {
+            const isOpen = row.classList.contains("active");
+
+            if (forceClose) {
+                row.classList.remove("active");
+                return;
             }
+
+            row.classList.toggle("active");
+        }
+
+        if (openToggle) {
+            openToggle.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleCard();
+            });
+
+            openToggle.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    toggleCard();
+                }
+            });
+        }
+
+        closeButtons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleCard(true);
+
+                row.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
         });
     });
 
