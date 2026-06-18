@@ -7,12 +7,18 @@
     box-sizing: border-box;
 }
 
-html,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -409,11 +415,11 @@ a:hover {
     border-radius: 18px;
 }
 
-.project-card-media img {
+/* .project-card-media img {
     width: 100%;
     max-width: 700px;
-    /* min-height: 320px;
-    height: 100%; */
+    min-height: 320px;
+    height: 100%; 
     object-fit: cover;
     display: block;
     border-radius: 0;
@@ -421,6 +427,39 @@ a:hover {
     transition: transform 0.45s ease;
     cursor: zoom-in;
     border-radius: 12px;
+} */
+
+.project-card-media {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.project-card-media img,
+.project-card-media video,
+.project-card-media .gallery-video-trigger {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project-card-media img,
+.project-card-media video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transform: scale(1.02);
+    transition: transform 0.45s ease;
+}
+
+.project-card-media .gallery-video-trigger {
+    aspect-ratio: 16 / 9;
+}
+
+.project-card-media .gallery-video-trigger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-card-media:hover img {
@@ -748,13 +787,13 @@ button.expand-toggle {
 }
 
 .card-image-item {
-    margin: 0;
+    margin-bottom: 10px;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 18px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* border: 1px solid rgba(255, 255, 255, 0.08); */
 }
 
 .card-image-item img,
@@ -769,6 +808,24 @@ button.expand-toggle {
 .card-image-item video {
     object-fit: cover;
 }
+
+.card-image-item img{
+    transform: scale(1.02);
+    transition: transform 0.45s ease;
+    cursor: zoom-in;
+}
+
+.card-image-item img:hover{
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+}
+
+/* .project-images-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    align-content: start;
+} */
 
 /* =========================
    PROJECT DETAILS
@@ -1358,6 +1415,10 @@ body.lightbox-open {
     .project-main {
         flex-direction: column !important;
         gap: 0;
+    }
+
+    .other-projects {
+        margin-top: 0px;
     }
 
     .project-image img {
