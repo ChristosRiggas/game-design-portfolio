@@ -34,30 +34,28 @@
 				<div class="dropdown">
 					<a class="selected" href="projects.html">Game Projects</a>
 					<div class="dropdown-menu">
-						<a href="projects.html">Project 1</a>
-						<a href="projects.html">Project 2</a>
-						<a href="projects.html">Project 3</a>
+						<a href="projects.html#projects-group">Group</a>
+						<a href="projects.html#projects-solo">Solo</a>
 					</div>
 				</div>
 
 				<div class="dropdown">
 					<a href="more-projects.html">Other Projects</a>
 					<div class="dropdown-menu">
-						<a href="more-projects.html">3D Art</a>
-						<a href="more-projects.html">2D Art</a>
-						<a href="more-projects.html">Animation</a>
+						<a href="more-projects.html#projects-3d">3D Art</a>
+						<a href="more-projects.html#projects-2d">2D Art</a>
+						<a href="more-projects.html#projects-other">Other</a>
 					</div>
 				</div>
 
 				<a href="resume/christos_ringas_cv_15-06-2026.pdf" download>Resume</a>
-
 				<a href="contact.html">Contact</a>
 
 			</nav>
 		</header>
 
-		<main class="projects-hero">
-			<div class="subhead highlighted-projects-head reveal-up" id="hp"> <h2 class="selected"> Highlighted Projects </h2></div>	
+		<main class="projects-hero"  id="projects-group">
+			<div class="subhead highlighted-projects-head reveal-up" id="hp"> <h2 class="selected"> Game Projects </h2></div>	
 				
 			<div class="game-projects highlighted-project">
 				<!-- Template for project cards. Copy and paste this block for each project, and fill in the details. -->
@@ -107,89 +105,267 @@
 					</div>
 				</div> -->
 
-				<!-- Project 1 -->
-				<article class="project-card-short reveal-up" id="project-1">
-					<div class="project-card-media">
-						<img src="images/hero_page/hero_page_image_1.png" alt="Project 1 gameplay or environment screenshot">
-					</div>
-
-					<div class="project-card-body">
-						<span class="project-card-number">Project 01</span>
-						<h3>Pigeons & Students</h3>
-
-						<p class="project-card-summary">
-							A short 1–2 sentence description of the project, what kind of game or experience it is, and what makes it interesting from a design perspective.
-						</p>
-
-						<ul class="project-card-meta">
-							<li><strong>Role:</strong> Main role, secondary role</li>
-							<li><strong>Tools:</strong> Engine, key tools</li>
-							<li><strong>Team:</strong> Solo / X people</li>
-							<li><strong>Focus:</strong> Main mechanic, system, level, narrative, or design goal</li>
-						</ul>
-
-						<div class="project-card-links">
-							<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-							<a href="reports/thesis_2d_shoter_mobile_report.pdf" target="_blank" rel="noopener noreferrer">Thesis Report</a>
+					<!-- Group Projects -->
+					<section class="project-category reveal-up">
+						<div class="category-head">
+							<h3>Group Projects</h3>
 						</div>
-					</div>
-				</article>
 
-				<!-- Project 2 -->
-				<article class="project-card-short reveal-up" id="project-2">
-					<div class="project-card-media">
-						<img src="images/hero_page/hero_page_image_2.png" alt="Project 2 gameplay or environment screenshot">
-					</div>
+						<div class="project-card-group">
 
-					<div class="project-card-body">
-						<span class="project-card-number">Project 02</span>
-						<h3>The Unfortunates</h3>
+							<!-- Project 1 - Pigeons and Students -->
+							<article class="project-card-short reveal-up" id="project-pigeons-and-students">
+								<div class="project-card-media">
+									<img src="images/hero_page/hero_page_image_1.png" alt="Project 1 gameplay or environment screenshot">
+								</div>
 
-						<p class="project-card-summary">
-							A short 1–2 sentence description of the project, what kind of game or experience it is, and what design challenge or player experience it explores.
-						</p>
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 01</span> -->
+									<h3>Pigeons & Students</h3>
 
-						<ul class="project-card-meta">
-							<li><strong>Role:</strong> Main role, secondary role</li>
-							<li><strong>Tools:</strong> Engine, key tools</li>
-							<li><strong>Team:</strong> Solo / X people</li>
-							<li><strong>Focus:</strong> Main mechanic, system, level, narrative, or design goal</li>
-						</ul>
+									<p class="project-card-summary">
+										An experimental 2D multiplayer shooter for shared physical spaces, where players use their smartphones as wireless controllers to battle on a large-scale projection.
+									</p>
 
-						<div class="project-card-links">
-							<a href="https://birklerviks.itch.io/the-unfortunates" target="_blank" rel="noopener noreferrer">Game Page</a>
-							<a href="reports/the_unfortunates_report.pdf" target="_blank" rel="noopener noreferrer">DevelopmentReport</a>
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Lead Systems & Gameplay Designer, Full-Stack Developer</li>
+										<li><strong>Tools:</strong> Vanilla JavaScript, p5.js, PHP, HTML/CSS, Aseprite</li>
+										<li><strong>Team:</strong> Solo</li>
+										<li><strong>Focus:</strong> Real-time controller system, Gameplay and systems design, Projection calibration tool</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://github.com/ChristosRiggas/Pigeons-and-Students" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+										<a href="reports/thesis_2d_shoter_mobile_report.pdf" target="_blank" rel="noopener noreferrer">Thesis Report</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- Project 2 - The Unfortunates -->
+							<article class="project-card-short reveal-up" id="project-the-unfortunates">
+								<div class="project-card-media">
+									<img src="images/hero_page/hero_page_image_2.png" alt="Project 2 gameplay or environment screenshot">
+								</div>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 02</span> -->
+									<h3>The Unfortunates</h3>
+
+									<p class="project-card-summary">
+										A narrative-heavy “cozy dystopia” adventure set in a surreal branch of purgatory, where players guide newly arrived spirits toward reincarnation through conversations and small but emotionally charged choices.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Gameplay Programmer & Systems Designer</li>
+										<li><strong>Tools:</strong> Unity (C#), GraphView, Git/GitHub, Trello, Aseprite, bfxr.net</li>
+										<li><strong>Team:</strong> 6-person university team</li>
+										<li><strong>Focus:</strong> Developer, Game Design, Game Systems, Helped with Animations, Balancing</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://birklerviks.itch.io/the-unfortunates" target="_blank" rel="noopener noreferrer">Game Page</a>
+										<a href="reports/the_unfortunates_report.pdf" target="_blank" rel="noopener noreferrer">DevelopmentReport</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- Project 3 - Loose Ends -->
+							<article class="project-card-short reveal-up" id="project-loose-ends">
+								<div class="project-card-media">
+									<img src="images/hero_page/hero_page_image_3.png" alt="The Loopers palace environment and mystery-stealth gameplay scene">
+								</div>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 03</span> -->
+									<h3>Loose Ends</h3>
+
+									<p class="project-card-summary">
+										A time-loop murder mystery set in a steampunk-inspired 18th-century France, where two thieves use disguises, stealth, and social engineering to uncover a noble conspiracy.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Lead Game Designer, Systems Designer, Level Designer</li>
+										<li><strong>Tools:</strong> Unity, Miro, Git/GitHub</li>
+										<li><strong>Team:</strong> 6 people</li>
+										<li><strong>Focus:</strong> Disguise systems, keyword dialogue, and knowledge-based progression</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://kyleagius.itch.io/loose-ends" target="_blank" rel="noopener noreferrer">Game Page</a>
+										<a href="https://github.com/SuvrangshuBarua/DIT468" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- Shard Game Engine – Asteroids -->
+							<article class="project-card-short reveal-up">
+								<figure class="project-card-media card-image-item card-video-item no-image-lightbox">
+									<button
+										class="gallery-video-trigger"
+										type="button"
+										data-video-src="videos/shard/gameplay.mp4"
+										aria-label="Play Shard Game Engine Asteroids video in fullscreen"
+									>
+										<img class="no-image-lightbox" src="videos/shard/gameplay_thumb.png" alt="Shard Game Engine Asteroids gameplay thumbnail">
+										<span class="video-play-badge">▶</span>
+									</button>
+								</figure>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 04</span> -->
+									<h3>Shard Game Engine – Asteroids</h3>
+
+									<p class="project-card-summary">
+										A technical arcade shooter prototype built to showcase new subsystems added to the Shard game engine, including audio, sprite handling, and ECS refactoring.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Sound System, Sprite Manager, ECS Refactoring</li>
+										<li><strong>Tools:</strong> C#, Shard Game Engine</li>
+										<li><strong>Team:</strong> Course team project</li>
+										<li><strong>Focus:</strong> Engine systems, gameplay integration, and technical implementation</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://github.com/nutellis/arrow-to-the-knee-engine" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+										<a href="https://www.gu.se/en/study-gothenburg/game-engine-architecture-dit572" target="_blank" rel="noopener noreferrer">Course Page</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- Gambit -->
+							<article class="project-card-short reveal-up" id="project-gambit">
+								<div class="project-card-media">
+									<img src="videos/gambit/gameplay_thumb.png" alt="Gambit gameplay screenshot showing a dungeon exploration or combat scene">
+								</div>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 04</span> -->
+									<h3>Gambit</h3>
+
+									<p class="project-card-summary">
+										A single-player, turn-based 3D first-person dungeon game where players fight monsters, collect treasure, and try to escape a ruined dungeon through strategic combat and resource decisions.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Systems Design, Development, Balancing</li>
+										<li><strong>Tools:</strong> Unity</li>
+										<li><strong>Team:</strong> Course project, Agile Development Processes</li>
+										<li><strong>Focus:</strong> Reward systems, character movement, balancing, and turn-based combat support</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://github.com/gainfoe/AgileProject" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+										<a href="https://www.youtube.com/watch?v=pW51-faZvlU" target="_blank" rel="noopener noreferrer">Video Demo</a>
+									</div>
+								</div>
+							</article>
+
 						</div>
-					</div>
-				</article>
+					</section>
 
-				<!-- Project 3 -->
-				<article class="project-card-short reveal-up" id="project-3">
-					<div class="project-card-media">
-						<img src="images/hero_page/hero_page_image_3.png" alt="The Loopers palace environment and mystery-stealth gameplay scene">
-					</div>
 
-					<div class="project-card-body">
-						<span class="project-card-number">Project 03</span>
-						<h3>Loose Ends</h3>
-
-						<p class="project-card-summary">
-							A time-loop murder mystery set in a steampunk-inspired 18th-century France, where two thieves use disguises, stealth, and social engineering to uncover a noble conspiracy.
-						</p>
-
-						<ul class="project-card-meta">
-							<li><strong>Role:</strong> Lead Game Designer, Systems Designer, Level Designer</li>
-							<li><strong>Tools:</strong> Unity, Miro, Git/GitHub</li>
-							<li><strong>Team:</strong> 6 people</li>
-							<li><strong>Focus:</strong> Disguise systems, keyword dialogue, and knowledge-based progression</li>
-						</ul>
-
-						<div class="project-card-links">
-							<a href="https://kyleagius.itch.io/loose-ends" target="_blank" rel="noopener noreferrer">Game Page</a>
-							<a href="https://github.com/SuvrangshuBarua/DIT468" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+					<!-- Solo Projects -->
+					<section class="project-category reveal-up" id="projects-solo">
+						<div class="category-head">
+							<h3>Solo Projects</h3>
 						</div>
-					</div>
-				</article>
+
+						<div class="project-card-group">
+
+							<!--  Forthright -->
+							<article class="project-card-short reveal-up" id="project-forthright">
+								<figure class="project-card-media card-image-item card-video-item no-image-lightbox">
+									<button
+										class="gallery-video-trigger"
+										type="button"
+										data-video-src="videos/forthright/gameplay.mp4"
+										aria-label="Play Forthright video in fullscreen"
+									>
+										<img class="no-image-lightbox" src="videos/forthright/gameplay_thumb.png" alt="Forthright gameplay thumbnail">
+										<span class="video-play-badge">▶</span>
+									</button>
+								</figure>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 05</span> -->
+									<h3>Forthright: 3rd Person Shooter</h3>
+
+									<p class="project-card-summary">
+										A local multiplayer third-person free-for-all shooter for two players, built around sandbox combat, split-screen play, and physics-based shooting in a 3D environment.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Systems Design, Level Design, Prototyping, UI, Scripting, Balancing</li>
+										<li><strong>Tools:</strong> Unity</li>
+										<li><strong>Team:</strong> Bachelor’s Game Development Project</li>
+										<li><strong>Focus:</strong> Multiplayer combat systems, level flow, split-screen play, and controller support</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://drive.google.com/drive/u/1/folders/1GLNI6NVNgZIeLmqRElghkovSqpJIC42h" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- 2d-Player-Legacy -->
+							<article class="project-card-short reveal-up" id="project-player-legacy">
+								<div class="project-card-media">
+									<img src="images/hero_page/more_images/2d-player-legacy/2d-player-legacy.png" alt="2d-Player-Legacy gameplay screenshot showing dungeon exploration and recorded player echoes">
+								</div>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 06</span> -->
+									<h3>2d-Player-Legacy</h3>
+
+									<p class="project-card-summary">
+										A 2D dungeon game where recordings of the player’s previous actions return as enemies, making each run harder and turning repetition into a core gameplay system.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Game Design, Development, Level Design, Game Systems, Balancing</li>
+										<li><strong>Tools:</strong> Unity</li>
+										<li><strong>Team:</strong> Solo Independent Master’s project, Gothenburg University</li>
+										<li><strong>Focus:</strong> Input-recording mechanics, increasing difficulty, and systemic replay design</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://github.com/ChristosRiggas/2d-Player-Legacy" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+										<a href="https://canvas.gu.se/courses/93513/assignments/351114" target="_blank" rel="noopener noreferrer">Course Info</a>
+										<a href="reports/player_legacy_report.pdf" target="_blank" rel="noopener noreferrer">Development Report</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- Game of Mayors -->
+							<article class="project-card-short reveal-up" id="project-mayors">
+								<div class="project-card-media">
+									<img src="images/hero_page/game_of_mayors_thumb.png" alt="Game of Mayors board game components and play materials">
+								</div>
+
+								<div class="project-card-body">
+									<!-- <span class="project-card-number">Project 07</span> -->
+									<h3>Game of Mayors: Corfu Mayor</h3>
+
+									<p class="project-card-summary">
+										A competitive multiplayer board game about becoming the next mayor of Corfu, built around randomized systems, player rivalry, and strategic decision-making.
+									</p>
+
+									<ul class="project-card-meta">
+										<li><strong>Role:</strong> Solo – Game Design, Balancing, Artwork, Rules, Game Mechanics</li>
+										<li><strong>Tools:</strong> Board game prototyping and visual design tools</li>
+										<li><strong>Team:</strong> Solo personal project</li>
+										<li><strong>Focus:</strong> Competitive board game systems, replayability, and randomized interaction design</li>
+									</ul>
+
+									<div class="project-card-links">
+										<a href="https://drive.google.com/drive/folders/1i4eRC47YcqCUlxlGm-WBOdaYMkWE_WTF" target="_blank" rel="noopener noreferrer">View Project</a>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</section>
 				
 			</div>
 		</main>
@@ -213,6 +389,14 @@
 	<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
 		<button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
 		<img class="lightbox-image" id="lightboxImage" src="" alt="">
+	</div>
+
+	<div class="media-lightbox" id="mediaLightbox" aria-hidden="true">
+		<button class="media-lightbox-close" id="mediaLightboxClose" type="button" aria-label="Close media viewer">
+			✕
+		</button>
+
+		<div class="media-lightbox-content" id="mediaLightboxContent"></div>
 	</div>
 
 </body>
