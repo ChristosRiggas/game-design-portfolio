@@ -1106,7 +1106,7 @@ button.expand-toggle {
     padding: 0;
     border: 0;
     background: none;
-    cursor: pointer;
+    cursor: zoom-in;
     border-radius: 14px;
     overflow: hidden;
 }
@@ -1122,14 +1122,14 @@ button.expand-toggle {
     position: absolute;
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     display: grid;
     place-items: center;
     border-radius: 999px;
     background: rgba(20, 14, 24, 0.72);
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     border: 1px solid rgba(255,255,255,0.18);
     backdrop-filter: blur(8px);
 }
