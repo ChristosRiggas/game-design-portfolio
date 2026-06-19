@@ -407,8 +407,8 @@ a:hover {
 
 .project-card-short {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 24px;
+    grid-template-columns: 0.5fr 2fr;
+    gap:10px;
     padding: 24px;
     background: rgba(24, 20, 23, 0.72);
     border: 1px solid rgba(234, 148, 255, 0.1);
