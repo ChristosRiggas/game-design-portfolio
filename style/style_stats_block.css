@@ -148,8 +148,9 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 10px;
+    padding-right: 0;
     gap: 5px;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .hamburger span {
