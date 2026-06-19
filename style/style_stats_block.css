@@ -15,16 +15,20 @@ html {
     overflow-x: hidden;
 }
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
     color: azure;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden; */
 }
 
 p {
@@ -70,7 +74,7 @@ a:hover {
 .page-container {
     min-height: 100vh;
     background-color: #533cff00;
-    padding-top: 64px;
+    padding-top: 58px;
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +83,7 @@ a:hover {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto 50px auto;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 .subhead h2 {
@@ -204,14 +208,24 @@ a:hover {
 /* =========================
    SLIDESHOW
 ========================= */
-.slideshow-container {
-    /* max-width: 1600px; */
+/* .slideshow-container {
     overflow: hidden;
     position: relative;
     margin: auto;
     transform: scale(1.04);
     transition: opacity 1s ease, transform 1s ease;
     background: #100e14e6;
+}  */
+
+.slideshow-container {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    transition: opacity 1s ease, transform 1s ease;
+    background: #100e14e6;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
 }
 
 .slideshow-container.loaded .slide img {
@@ -224,19 +238,21 @@ a:hover {
 }
 
 .slide-inner {
+    max-width: 100%;
     position: relative;
     display: inline-block;
 }
 
 .slides {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     will-change: transform;
     transition: transform 5s ease;
     box-sizing: border-box;
 }
 
 .slide {
+    max-width: 100%;
     flex: 0 0 100%;
     position: relative;
     display: flex;
@@ -250,7 +266,7 @@ a:hover {
 .slide img {
     width: 100%;
     height: auto;
-    max-width: 1200px;
+    max-width: 100%;
     max-height: 80vh;
     display: block;
     transform: scale(1.05);
@@ -1280,11 +1296,18 @@ body.lightbox-open {
    MOBILE
 ========================= */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .page-container {
-        padding-top: 85px;
+        padding-top: 80px;
     }
 
     .header {
+        width: 100%;
+        max-width: 100%;
+        right: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1309,6 +1332,9 @@ body.lightbox-open {
     }
 
     .nav {
+        width: 100%;
+        max-width: 100%;
+        right: 0;
         position: absolute;
         top: 84px;
         left: 0;
@@ -1342,7 +1368,7 @@ body.lightbox-open {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
-        transform: scale(1.04);
+        transform: none;
     }
 
     .slide img {
@@ -1351,11 +1377,22 @@ body.lightbox-open {
         height: auto;
     }
 
-    .slide-text {
-        left: 20px;
-        bottom: 20px;
-        font-size: 14px;
-        padding: 10px;
+    .slide-text{
+        left: 5%;
+        bottom: 5px;
+        margin: 5px;
+        padding: 5px;
+        /* font-size: 14px; */
+        /* padding: 10px; */
+    }
+
+    .slide-text h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .slide-text p {
+        display: none;
     }
 
     .arrows {
@@ -1368,9 +1405,9 @@ body.lightbox-open {
     }
 
     .content {
-        width: 90%;
-        margin: 0 auto 50px auto;
-        padding: 0 20px;
+        width: 100%;
+        margin: 0 auto 40px auto;
+        padding: 0 14px;
     }
 
     .subhead h2 {
