@@ -73,7 +73,7 @@ a:hover {
 ========================= */
 .page-container {
     min-height: 100vh;
-    background-color: #533cff00;
+    background-color: #412d4100;
     padding-top: 58px;
     display: flex;
     flex-direction: column;
@@ -887,7 +887,7 @@ button.expand-toggle {
 
 .project-details-grid {
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     gap: 20px;
 }
 
@@ -971,7 +971,7 @@ button.expand-toggle {
 ========================= */
 .contribution-cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 14px;
 }
 
