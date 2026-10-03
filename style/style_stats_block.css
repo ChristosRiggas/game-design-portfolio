@@ -96,10 +96,26 @@ a:hover {
 }
 
 .subcontent {
+    display: flex;
     padding: 40px;
     background-color: #1c1c1ca6;
     margin-top: 19px;
     margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* =========================
@@ -1420,6 +1436,7 @@ body.lightbox-open {
 
     .subcontent {
         margin-top: 0px;
+        display: inline-block;
     }
 
     .projects-hero {
