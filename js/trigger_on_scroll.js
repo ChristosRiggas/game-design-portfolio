@@ -12,7 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 
 window.addEventListener("load", () => {
 
-    document.querySelectorAll(".reveal-up, .reveal-left, .reveal-right")
+    document.querySelectorAll(".reveal-up, .reveal-left, .reveal-right, .reveal-down")
     .forEach(el => {
 
         observer.observe(el);
