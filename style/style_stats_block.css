@@ -1439,13 +1439,57 @@ body.lightbox-open {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 0 20px;
+    margin: 12px 0;
     text-align: center;
+    width: 100%;
+}
+
+.contact-link {
+    align-items: center;
+    gap: 14px;
+    padding: 12px 18px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid var(--game-projects-border);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-link i {
+    font-size: 21px;
+    width: 24px;
+    text-align: center;
+    color: var(--contact-link-icon);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #fff;
+    border-color: var(--a-hover);
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-1px);
+}
+
+.contact-link:hover i {
+    color: var(--a-hover);
 }
 
 .contact-info a {
     /* color: #ea94ff; */
     font-size: 1.1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 19px;
+    background-color: var(--game-projects-bg);
+    padding: 30px 200px;
 }
 
 /* =========================
@@ -1476,6 +1520,10 @@ body.lightbox-open {
 
     .header {
         gap: 10px;
+    }
+
+    .contact-container {
+        padding: 30px 100px;
     }
 }
 
@@ -1732,5 +1780,9 @@ body.lightbox-open {
 
     .card-image-item {
         aspect-ratio: 16 / 9;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
     }
 }
