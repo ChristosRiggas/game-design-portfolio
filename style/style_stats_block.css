@@ -147,6 +147,35 @@
     --proj-4: #dce3e6d9;
 }
 
+/* -------------- DARK -------------- */
+:root[data-theme="dark"] {
+    --logo-color: #ffffff;
+    --bg: #141416;
+    --bg-elevated: #1f1f23;
+    --text: #f2f2f4;
+    --span-li: #a8a8b0;
+    --category-head-p: rgb(185, 185, 192);
+    --link: #d4d4dc;
+    --link-hover: #ffffff;
+    --highlight: #e4e4ec;
+    --btn-text: #e4e4ec;
+    --btn-hover-text: #ffffff;
+    --dropdown-hover-text: #141416;
+    --header-bg: #0c0c0e;
+    --subcontent-bg: #1c1c1fd9;
+    --subhead-bg: #2a2a2f;
+    --accent-rgb: 212, 212, 220;
+    --deep-rgb: 140, 140, 150;
+    --panel-rgb: 255, 255, 255;   /* subtle overlays */
+    --card-rgb: 24, 24, 28;       /* card backgrounds */
+    --bg-filter: none;
+    --bg-opacity: 0;              /* hides the purple image */
+    --proj-1: #23211ec9;          /* Pigeons & Students */
+    --proj-2: #241e24c9;          /* The Unfortunates */
+    --proj-3: #23221cc9;          /* Loose Ends */
+    --proj-4: #1e2325c9;          /* Forthright */
+}
+
 .theme-select {
     background: var(--header-bg);
     color: var(--link);
@@ -1475,7 +1504,7 @@ body.lightbox-open {
 .contact-link:hover {
     color: #fff;
     border-color: var(--a-hover);
-    background: rgba(139, 92, 246, 0.1);
+    background: var(--contact-link-hover-bg);
     transform: translateY(-1px);
 }
 
