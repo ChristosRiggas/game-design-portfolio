@@ -291,6 +291,16 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.profile-contact-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 30px;
+}
+
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -1024,7 +1034,7 @@ button.expand-toggle {
 .card-image-item video,
 .card-image-item .gallery-video-trigger {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: block;
 }
 
@@ -1819,5 +1829,30 @@ body.lightbox-open {
     .contact-container {
         padding: 30px 20px;
         margin-top: 0px;
+    }
+
+    .project-card-short {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card-short-media {
+        justify-content: center;
+        .card-image-item {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        display: grid;
+        grid-template-columns: 0.5fr .5fr;
+        gap: 10px;
+    }
+
+    .profile-pics {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-contact-icons {
+        justify-content: right;
+        font-size: 2rem;
     }
 }
